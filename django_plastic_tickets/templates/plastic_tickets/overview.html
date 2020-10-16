@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load django_bootstrap_breadcrumbs %}
+
+{% block breadcrumbs %}
+    {{ block.super }}
+    {% breadcrumb 'Plastic tickets' 'plastic_tickets_index' %}
+{% endblock %}
+
+{% block content %}
+    {{ block.super }}
+    {% blocktrans %}
+        Welcome to Plastic Tickets!
+    {% endblocktrans %}
+
+    <br>
+
+    <a href="{% url 'plastic_tickets_new' %}">
+      <button class="btn btn-info mb-4">
+          {% blocktrans %}
+              Click here to create a ticket
+          {% endblocktrans %}
+      </button>
+    </a>
+{% endblock %}

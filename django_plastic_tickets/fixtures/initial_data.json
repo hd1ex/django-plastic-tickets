@@ -1,0 +1,73 @@
+[
+    {
+        "model": "django_plastic_tickets.productionmethod",
+        "pk": 1,
+        "fields": {
+            "name": "FFF/FDM",
+            "name_en": "FFF/FDM",
+            "name_de": "FFF/FDM",
+            "markdown_description": "**Fused Filament Fabrication** (FFF), also known under the trademarked term fused deposition modeling (FDM), is a 3D printing process that uses a continuous filament of a thermoplastic material. It is a well-established and a cheap production method.",
+            "markdown_description_en": "**Fused Filament Fabrication** (FFF), also known under the trademarked term fused deposition modeling (FDM), is a 3D printing process that uses a continuous filament of a thermoplastic material. It is a well-established and a cheap production method.",
+            "markdown_description_de": "**Schmelzschichtung** (Fused Filament Fabrication) ist das gängigste Verfahren zum 3D-Drucken. Dabei wird Schicht für Schicht das geschmolzene Material von einem Druckkopf mit heißer Düse übereinander gelegt, welches dann abkühlt und aushärtet. Schmelzschichtung ist ein etabliertes und günstiges Produktionsverfahren."
+        }
+    },
+    {
+        "model": "django_plastic_tickets.productionmethod",
+        "pk": 2,
+        "fields": {
+            "name": "SLA",
+            "name_en": "SLA",
+            "name_de": "SLA",
+            "markdown_description": "In **Stereolithography** (SLA), the liquid material is cured layer by layer by brief illumination with a high-resolution screen. This allows a high degree of detail to be realized. However, this production method is comparatively expensive.",
+            "markdown_description_en": "In **Stereolithography** (SLA), the liquid material is cured layer by layer by brief illumination with a high-resolution screen. This allows a high degree of detail to be realized. However, this production method is comparatively expensive.",
+            "markdown_description_de": "Bei der **Stereolithografie** (SLA) wird das flüssige Material schichtenweise durch kurze Beleuchtung mit einem höchauflösenden Bildschirm zum aushärten gebracht. Dadurch kann ein großer Detailgrad realisiert werden. Diese Fertigungsmethode ist jedoch vergleichsweise teuer."
+        }
+    },
+    {
+        "model": "django_plastic_tickets.materialtype",
+        "pk": 1,
+        "fields": {
+            "name": "PLA",
+            "name_en": "PLA",
+            "name_de": "PLA",
+            "markdown_description": "**Polylactide** (PLA) is the most widely used plastic in 3D printing. Its advantages are low price, biocompatibility, low moisture absorption, low flammability, high UV resistance, color fastness, and low density (weight). However, PLA has a lower temperature resistance.",
+            "markdown_description_en": "**Polylactide** (PLA) is the most widely used plastic in 3D printing. Its advantages are low price, biocompatibility, low moisture absorption, low flammability, high UV resistance, color fastness, and low density (weight). However, PLA has a lower temperature resistance.",
+            "markdown_description_de": "**Polylactide** (PLA) ist der meist verbreiteste Kunststoff beim 3D-Drucken. Dessen Vorteile sind ein geringer Preis, seine Biokompatibilität, geringe Feuchtigkeitsaufnahme, geringe Flammbarkeit, hohe UV-Beständigkeit, Farbechtheit, und geringe Dichte (Gewicht). Jedoch hat PLA eine niedrigere Temperaturbeständigkeit.",
+            "production_method": 1
+        }
+    },
+    {
+        "model": "django_plastic_tickets.materialcolor",
+        "pk": 1,
+        "fields": {
+            "name": "Black",
+            "name_en": "Black",
+            "name_de": "Schwarz",
+            "markdown_description": "Just Black.",
+            "markdown_description_en": "Just Black.",
+            "markdown_description_de": "Einfach Schwarz."
+        }
+    },
+    {
+        "model": "django_plastic_tickets.material",
+        "pk": 1,
+        "fields": {
+            "color": 1,
+            "type": 1,
+            "name": "Extrudr PLA NX2 Schwarz",
+            "url": "https://www.extrudr.com/en/products/catalogue/pla-nx2-schwarz_1966/",
+            "optimal_temp": 210.0,
+            "min_temp": 200.0,
+            "max_temp": 230.0
+        }
+    },
+    {
+        "model": "django_plastic_tickets.materialstock",
+        "pk": 1,
+        "fields": {
+            "material": 1,
+            "label": 1,
+            "consumed": false
+        }
+    }
+]

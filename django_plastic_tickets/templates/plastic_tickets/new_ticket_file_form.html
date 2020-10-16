@@ -1,0 +1,176 @@
+{% load i18n %}
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <div class="form-group">
+        <h4>{% trans 'Basic information' %}</h4>
+        <small>
+            {% blocktrans %}
+                The basic information you <b>have to</b> choose yourself.
+            {% endblocktrans %}
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label for="count">
+            {% trans 'Count' %}:
+        </label>
+        <label aria-describedby="count_desc">
+            <input class="form-control" type="number" id="count" min="1"
+                   name="file_count" value="1">
+        </label>
+        <small id="count_desc" class="form-text">
+            {% blocktrans %}
+                How many times do you want to have this model printed?
+            {% endblocktrans %}
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label for="production_method">
+            {% trans 'Production method' %}:
+        </label>
+        <label>
+            <select class="select2-dropdown" id="production_method"
+                    name="production_method">
+            </select>
+        </label>
+        <small id="production_method_desc" class="form-text">
+            {% blocktrans %}
+                Which production method should be used?
+            {% endblocktrans %}
+        </small>
+        <small class="form-text">
+            {% blocktrans %}
+                Here is a quick description of your current selection:
+            {% endblocktrans %}
+        </small>
+        <small id="production_method_summary">
+            {% blocktrans %}
+                Placeholder: Please enable JavaScript!
+            {% endblocktrans %}
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label for="material_type">
+            {% trans 'Material type' %}:
+        </label>
+        <label>
+            <select class="select2-dropdown" id="material_type"
+                    name="material_type">
+            </select>
+        </label>
+        <small id="material_type_desc" class="form-text">
+            {% blocktrans %}
+                Which material should be used?
+            {% endblocktrans %}
+        </small>
+        <small class="form-text">
+            {% blocktrans %}
+                Here is a quick description of your current selection:
+            {% endblocktrans %}
+        </small>
+        <small id="material_type_summary">
+            {% blocktrans %}
+                Placeholder: Please enable JavaScript!
+            {% endblocktrans %}
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label for="material_color">
+            {% trans "Material color" %}:
+        </label>
+        <label>
+            <select class="select2-dropdown" id="material_color"
+                    name="material_color">
+            </select>
+        </label>
+        <small id="material_type_desc" class="form-text">
+            {% blocktrans %}
+                Which color should the material have?
+            {% endblocktrans %}
+        </small>
+    </div>
+
+    {% comment %}
+    TODO for later
+    <div class="form-group">
+        <h4>Advanced information</h4>
+        <small>
+            {% blocktrans %}
+                The advanced information you <em>can</em> choose yourself.
+                <br>
+                If not specified, we will take care of this.
+            {% endblocktrans %}
+        </small>
+    </div>
+    {% endcomment %}
+
+    <button type="submit" class="btn btn-primary"
+            name="config_form">{% trans "Save" %}</button>
+    <button type="reset" class="btn btn-secondary">{% trans "Reset" %}</button>
+</form>
+
+<script type="text/javascript">
+    const tree = {{js_data|safe}};
+
+    let pm = document.getElementById('production_method');
+    let mt = document.getElementById('material_type');
+    let mc = document.getElementById('material_color');
+
+    let pm_desc = document.getElementById('production_method_summary');
+    let mt_desc = document.getElementById('material_type_summary');
+
+    let update_mt_options = function () {
+        const pm_index = pm.selectedIndex;
+        mt.options.length = 0;
+        for (let material in tree[pm_index].material_types) {
+            let o = tree[pm_index].material_types[material];
+            mt.options.add(new Option(o.display_name, o.name));
+        }
+    }
+
+    let update_mc_options = function () {
+        const pm_index = pm.selectedIndex;
+        const mt_index = mt.selectedIndex;
+        mc.options.length = 0;
+        for (let color in
+            tree[pm_index].material_types[mt_index].material_colors) {
+            let o = tree[pm_index]
+                .material_types[mt_index]
+                .material_colors[color];
+            mc.options.add(new Option(o.display_name, o.name));
+        }
+    }
+
+    let update_descriptions = function () {
+        pm_desc.innerHTML = tree[pm.selectedIndex].description;
+        mt_desc.innerHTML = tree[pm.selectedIndex]
+            .material_types[mt.selectedIndex].description;
+    }
+
+    pm.onchange = function () {
+        update_mt_options();
+        update_descriptions();
+    };
+
+    mt.onchange = function () {
+        update_mc_options();
+        update_descriptions();
+    };
+
+    // Initial data
+    for (const method in tree) {
+        let o = tree[method];
+        pm.options.add(new Option(o.display_name, o.name));
+    }
+    pm.selectedIndex = 0;
+
+    update_mt_options();
+    update_mc_options();
+    update_descriptions();
+    // TODO: Maybe also display description of (special) material colors
+</script>

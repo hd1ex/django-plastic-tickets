@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load django_bootstrap_breadcrumbs %}
+
+{% block breadcrumbs %}
+    {{ block.super }}
+    {% breadcrumb 'Plastic tickets' 'plastic_tickets_index' %}
+    {% breadcrumb 'New' 'plastic_tickets_new' %}
+{% endblock %}
+
+{% block content %}
+    {{ block.super }}
+
+    {% if not files %}
+        {% include 'plastic_tickets/new_ticket_start.html' %}
+    {% else %}
+        {% include 'plastic_tickets/new_ticket_file_upload.html' %}
+
+        <ul class="nav nav-tabs">
+            {% for file in files %}
+                <li class="nav-item">
+                    <a class="nav-link {% if file.name == active_file.name %} active{% endif %}"
+                       href="{{ file.name }}">{{ file.name }}
+                        {% if file in configured_files %} ✓ {% endif %}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+
+        <div class="card">
+            <div class="card-body">
+                {% include 'plastic_tickets/new_ticket_file_form.html' %}
+            </div>
+        </div>
+
+        {% if fully_configured %}
+            {% include 'plastic_tickets/new_ticket_submit.html' %}
+        {% else %}
+            {% blocktrans %}
+                Configure all files to submit the ticket.
+            {% endblocktrans %}
+        {% endif %}
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,4 @@
+include LICENSE
+include README.rst
+recursive-include django_plastic_tickets/static *
+recursive-include django_plastic_tickets/templates *

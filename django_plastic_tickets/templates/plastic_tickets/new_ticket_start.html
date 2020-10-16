@@ -1,0 +1,36 @@
+{% load i18n %}
+
+<h2>
+    {% blocktrans %}
+        Ticket creation
+    {% endblocktrans %}
+</h2>
+
+<p>
+    {% blocktrans %}
+        Here you can create a new Ticket for 3D models to be 3D printed by us.
+    {% endblocktrans %}
+</p>
+
+<p>
+    {% blocktrans %}
+        You will start by adding one or more stl files
+        that you want to be printed one or many times.
+    {% endblocktrans %}
+</p>
+
+<p>
+    {% blocktrans %}
+        Make sure that you use <b>sane file names</b> as we will reference
+        them later.
+    {% endblocktrans %}
+</p>
+
+<p>
+    {% blocktrans %}
+        After this you will specify the details about the prints
+        and you can add a custom message.
+    {% endblocktrans %}
+</p>
+
+{% include 'plastic_tickets/new_ticket_file_upload.html' %}

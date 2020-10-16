@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% load django_bootstrap_breadcrumbs %}
+
+{% block breadcrumbs %}
+    {{ block.super }}
+    {% breadcrumb 'Plastic tickets' 'plastic_tickets_index' %}
+    {% breadcrumb ticket.id 'plastic_tickets_ticket' %}
+{% endblock %}
+
+{% block content %}
+    <h3> # Ticket {{ ticket.id }}</h3>
+    {% blocktrans with name=user.get_full_name email=user.email %}
+        This ticket is from {{ name }} ({{ email }}).
+    {% endblocktrans %}
+
+    <br>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">{% trans 'File' %}</th>
+            <th scope="col">{% trans 'Count' %}</th>
+            <th scope="col">{% trans 'Material' %}</th>
+            <th scope="col">{% trans 'Color' %}</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for config in ticket.printconfig_set.all %}
+            <tr>
+                <td>
+                    <a href="{{ config.get_file_url }}">
+                        {{ config.get_file_name }}
+                    </a>
+                </td>
+                <td>{{ config.count }}</td>
+                <td>{{ config.material_type }}</td>
+                <td>{{ config.color }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    {% if ticket.message %}
+        <div>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message"
+                      readonly
+                      class="form-text"
+                      style="font-family: monospace"
+                      rows="{{ ticket.get_message_row_count }}"
+                      cols="76"
+                      wrap="soft">{{ ticket.message }}</textarea>
+        </div>
+    {% endif %}
+{% endblock %}
