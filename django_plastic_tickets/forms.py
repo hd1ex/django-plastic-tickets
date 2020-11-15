@@ -1,12 +1,16 @@
 import shutil
 from pathlib import Path
+from smtplib import SMTPException
 from typing import List
 
 from django.contrib.auth.models import User
 from django.core.files.uploadedfile import InMemoryUploadedFile
-from django.http import QueryDict
+from django.http import QueryDict, HttpRequest
 from django.template.loader import render_to_string
 from django.utils import translation
+from django.utils.translation import gettext
+from django.contrib import messages
+from django.conf import settings
 
 from . import models, util
 
@@ -55,7 +59,8 @@ def cache_files(user: User, files: List[InMemoryUploadedFile]):
                 dest.write(chunk)
 
 
-def submit_ticket(user: User, message: str, send_to_user: bool):
+def submit_ticket(request: HttpRequest, user: User, message: str,
+                  send_to_user: bool):
     ticket = models.Ticket(message=message)
     ticket.save()
 
@@ -85,7 +90,19 @@ def submit_ticket(user: User, message: str, send_to_user: bool):
 
     subject = f'Ticket number {ticket.id}'
 
-    util.send_email(subject, mail_text, user.email if send_to_user else None,
-                    user.email)
+    try:
+        util.send_email(subject, mail_text,
+                        user.email if send_to_user else None,
+                        user.email)
+        messages.add_message(request, messages.INFO,
+                             gettext('Email sent successfully.'),
+                             'alert alert-success')
+    except SMTPException:
+        messages.add_message(
+            request, messages.ERROR,
+            gettext('Email-transport failed. Please email %(rec)s manually '
+                    'and mention your ticket id. Sorry for the inconvenience!'
+                    ) % {'rec': ', '.join(settings.TICKET_RECIPIENTS)},
+            'alert alert-danger')
 
     return ticket.id

@@ -10,6 +10,13 @@
 {% endblock %}
 
 {% block content %}
+    {% if messages %}
+        {% for message in messages %}
+            <div {% if message.tags %}
+                class="{{ message.tags }}"{% endif %}>{{ message }}</div>
+        {% endfor %}
+    {% endif %}
+
     <h3> # Ticket {{ ticket.id }}</h3>
     {% blocktrans with name=user.get_full_name email=user.email %}
         This ticket is from {{ name }} ({{ email }}).

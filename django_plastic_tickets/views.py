@@ -47,7 +47,8 @@ def new_ticket_view(request: HttpRequest, active_file='') -> HttpResponse:
             util.delete_all_cached_files_for_user(request.user)
             return redirect('plastic_tickets_new')
         elif request.POST.get('create_ticket') is not None:
-            id = forms.submit_ticket(request.user,
+            id = forms.submit_ticket(request,
+                                     request.user,
                                      request.POST.get('ticket_text', ''),
                                      request.POST.get('send_to_user') == 'on')
             return redirect('plastic_tickets_ticket', id=id)
