@@ -70,7 +70,7 @@ def ticket_view(request: HttpRequest, id: int) -> HttpResponse:
         return HttpResponseForbidden(gettext('Access denied'))
 
     return render(request, 'plastic_tickets/ticket_view.html', context={
-        'user': request.user,
+        'user': ticket.printconfig_set.first().user,
         'ticket': ticket,
     })
 
