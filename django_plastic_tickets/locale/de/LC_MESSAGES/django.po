@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-11 23:51+0200\n"
+"POT-Creation-Date: 2020-11-15 19:07+0100\n"
 "PO-Revision-Date: 2020-10-11 23:47+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -18,11 +18,24 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.4.1\n"
 
-#: django-plastic-tickets/django_plastic_tickets/models.py:16
+#: django-plastic-tickets/django_plastic_tickets/forms.py:98
+msgid "Email sent successfully."
+msgstr "E-Mail erfolgreich versandt."
+
+#: django-plastic-tickets/django_plastic_tickets/forms.py:103
+#, python-format
+msgid ""
+"Email-transport failed. Please email %(rec)s manually and mention your "
+"ticket id. Sorry for the inconvenience!"
+msgstr "Das Versenden der E-Mail ist fehlgeschlagen. Bitte sende eigenständig "
+"eine E-Mail mit deiner Ticket-Id an %(rec)s. Enschuldigung für die "
+"Unanehmlichkeiten!"
+
+#: django-plastic-tickets/django_plastic_tickets/models.py:20
 msgid "The markdown-formatted description"
 msgstr "Die mit Markdown formatierte Beschreibung"
 
-#: django-plastic-tickets/django_plastic_tickets/models.py:67
+#: django-plastic-tickets/django_plastic_tickets/models.py:71
 msgid "The internal label to identify the material"
 msgstr "Die interne Kennzeichnung, um das Material zu indentifizieren"
 
@@ -49,7 +62,7 @@ msgstr ""
 "Die grundlegenden Informationen <b>musst</b> du selbst wählen."
 
 #: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_file_form.html:17
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/ticket_view.html:24
+#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/ticket_view.html:31
 msgid "Count"
 msgstr "Anzahl"
 
@@ -228,7 +241,7 @@ msgstr ""
 "\n"
 "Drücke hier, um ein Ticket zu erstellen"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/ticket_view.html:14
+#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/ticket_view.html:21
 #, python-format
 msgid ""
 "\n"
@@ -239,21 +252,21 @@ msgstr ""
 "Dieses Ticket ist von %(name)s (%(email)s).\n"
 "    "
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/ticket_view.html:23
+#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/ticket_view.html:30
 msgid "File"
 msgstr "Datei"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/ticket_view.html:25
+#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/ticket_view.html:32
 #, fuzzy
 #| msgid "Material type"
 msgid "Material"
 msgstr "Materialart"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/ticket_view.html:26
+#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/ticket_view.html:33
 msgid "Color"
 msgstr "Farbe"
 
-#: django-plastic-tickets/django_plastic_tickets/views.py:70
-#: django-plastic-tickets/django_plastic_tickets/views.py:84
+#: django-plastic-tickets/django_plastic_tickets/views.py:71
+#: django-plastic-tickets/django_plastic_tickets/views.py:85
 msgid "Access denied"
 msgstr "Zugang verweigert"
