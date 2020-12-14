@@ -31,6 +31,9 @@
             <th scope="col">{% trans 'Count' %}</th>
             <th scope="col">{% trans 'Material' %}</th>
             <th scope="col">{% trans 'Color' %}</th>
+	    {% if request.user.is_staff %}
+	    <th scope="col">{% trans 'Labels of possible<br>materials' %}</th>
+	    {% endif %}
         </tr>
         </thead>
         <tbody>
@@ -42,8 +45,11 @@
                     </a>
                 </td>
                 <td>{{ config.count }}</td>
-                <td>{{ config.material_type }}</td>
-                <td>{{ config.color }}</td>
+                <td>{{ config.get_material_type_name }}</td>
+                <td>{{ config.get_color_name }}</td>
+	        {% if request.user.is_staff %}
+                <td>{{ config.get_material_stock_list }}</td>
+	        {% endif %}
             </tr>
         {% endfor %}
         </tbody>

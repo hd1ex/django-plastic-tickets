@@ -18,7 +18,7 @@
         </label>
         <label aria-describedby="count_desc">
             <input class="form-control" type="number" id="count" min="1"
-                   name="file_count" value="1">
+                   name="file_count" value="{{count}}">
         </label>
         <small id="count_desc" class="form-text">
             {% blocktrans %}
@@ -111,7 +111,7 @@
 
     <button type="submit" class="btn btn-primary"
             name="config_form">{% trans "Save" %}</button>
-    <button type="reset" class="btn btn-secondary">{% trans "Reset" %}</button>
+    <button type="button" class="btn btn-secondary" id="reset-btn">{% trans "Reset" %}</button>
 </form>
 
 <script type="text/javascript">
@@ -167,10 +167,23 @@
         let o = tree[method];
         pm.options.add(new Option(o.display_name, o.name));
     }
-    pm.selectedIndex = 0;
 
-    update_mt_options();
-    update_mc_options();
-    update_descriptions();
-    // TODO: Maybe also display description of (special) material colors
+    let reset = function () {
+        {% if selected_pm %}
+        pm.value = '{{selected_pm}}';
+        {% else %}
+        pm.selectedIndex = 0;
+        {% endif %}
+        update_mt_options();
+        {% if selected_mat_type %}
+        mt.value = '{{selected_mat_type}}';
+        {% endif %}
+        update_mc_options();
+        {% if selected_color %}
+        mc.value = '{{selected_color}}';
+        {% endif %}
+        update_descriptions();
+   }
+   document.getElementById("reset-btn").onclick = reset;
+   reset();
 </script>

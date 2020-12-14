@@ -17,36 +17,29 @@ from . import models, util
 
 def cache_config(active_file: Path, user: User, post: QueryDict):
     fc = post['file_count']
-    pm = post['production_method']
-    mt = post['material_type']
-    mc = post['material_color']
+    stocks_lbl = set(int(label) for label in post['material_color'].split(","))
+    if len(stocks_lbl) == 0:
+        return False
 
     # Get DB objects for Options
-    material_type = models.MaterialType.objects.filter(
-        name__iexact=mt, production_method__name__iexact=pm).first()
-    color = models.MaterialColor.objects.filter(name__iexact=mc).first()
-    if material_type is None or color is None:
+    stocks = models.MaterialStock.objects.filter(label__in=stocks_lbl)
+    if len(stocks_lbl) != len(stocks):
         return False
+
     # Check for existing cached config
     config = models.PrintConfig.objects.filter(
         file=active_file, user=user).first()
 
-    # Update existing config and return
+    # Update existing config or create a new one
     if config is not None:
         config.count = int(fc)
-        config.material_type = material_type
-        config.color = color
-        config.save()
-        return True
-
-    # Create new (cached) config
-    config = models.PrintConfig(file=active_file,
-                                count=int(fc),
-                                material_type=material_type,
-                                color=color,
-                                user=user,
-                                ticket=None
-                                )
+    else:
+        config = models.PrintConfig(file=active_file,
+                                    count=int(fc),
+                                    user=user,
+                                    ticket=None)
+        config.save()  # need to save before the many-to-many field is set
+    config.material_stocks.set(stocks, clear=True)
     config.save()
     return True
 

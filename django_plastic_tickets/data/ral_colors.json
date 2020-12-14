@@ -1,0 +1,2133 @@
+{
+    "comment": "Source of this data: https://gist.github.com/lunohodov/1995178",
+    "1000": {
+        "RGB": "190-189-127",
+        "HEX": "#BEBD7F",
+        "de": "Gr\u00fcnbeige",
+        "en": "Green beige",
+        "fr": "Beige vert",
+        "es": "Beige verdoso",
+        "it": "Beige verdastro",
+        "nl": "Groenbeige"
+    },
+    "1001": {
+        "RGB": "194-176-120",
+        "HEX": "#C2B078",
+        "de": "Beige",
+        "en": "Beige",
+        "fr": "Beige",
+        "es": "Beige",
+        "it": "Beige",
+        "nl": "Beige"
+    },
+    "1002": {
+        "RGB": "198-166-100",
+        "HEX": "#C6A664",
+        "de": "Sandgelb",
+        "en": "Sand yellow",
+        "fr": "Jaune sable",
+        "es": "Amarillo arena",
+        "it": "Giallo sabbia",
+        "nl": "Zandgeel"
+    },
+    "1003": {
+        "RGB": "229-190-001",
+        "HEX": "#E5BE01",
+        "de": "Signalgelb",
+        "en": "Signal yellow",
+        "fr": "Jaune de s\u00e9curit\u00e9",
+        "es": "Amarillo se\u00f1ales",
+        "it": "Giallo segnale",
+        "nl": "Signaalgeel"
+    },
+    "1004": {
+        "RGB": "205-164-052",
+        "HEX": "#CDA434",
+        "de": "Goldgelb",
+        "en": "Golden yellow",
+        "fr": "Jaune or",
+        "es": "Amarillo oro",
+        "it": "Giallo oro",
+        "nl": "Goudgeel"
+    },
+    "1005": {
+        "RGB": "169-131-007",
+        "HEX": "#A98307",
+        "de": "Honiggelb",
+        "en": "Honey yellow",
+        "fr": "Jaune miel",
+        "es": "Amarillo miel",
+        "it": "Giallo miele",
+        "nl": "Honinggeel"
+    },
+    "1006": {
+        "RGB": "228-160-016",
+        "HEX": "#E4A010",
+        "de": "Maisgelb",
+        "en": "Maize yellow",
+        "fr": "Jaune ma\u00efs",
+        "es": "Amarillo maiz",
+        "it": "Giallo polenta",
+        "nl": "Maisgeel"
+    },
+    "1007": {
+        "RGB": "220-156-000",
+        "HEX": "#DC9D00",
+        "de": "Narzissengelb",
+        "en": "Daffodil yellow",
+        "fr": "Jaune narcisse",
+        "es": "Amarillo narciso",
+        "it": "Giallo narciso",
+        "nl": "Narcissengeel"
+    },
+    "1011": {
+        "RGB": "138-102-066",
+        "HEX": "#8A6642",
+        "de": "Braunbeige",
+        "en": "Brown beige",
+        "fr": "Beige brun",
+        "es": "Beige pardo",
+        "it": "Beige marrone",
+        "nl": "Bruinbeige"
+    },
+    "1012": {
+        "RGB": "199-180-070",
+        "HEX": "#C7B446",
+        "de": "Zitronengelb",
+        "en": "Lemon yellow",
+        "fr": "Jaune citron",
+        "es": "Amarillo lim\u00f3n",
+        "it": "Giallo limone",
+        "nl": "Citroengeel"
+    },
+    "1013": {
+        "RGB": "234-230-202",
+        "HEX": "#EAE6CA",
+        "de": "Perlwei\u00df",
+        "en": "Oyster white",
+        "fr": "Blanc perl\u00e9",
+        "es": "Blanco perla",
+        "it": "Bianco perla",
+        "nl": "Parelwit"
+    },
+    "1014": {
+        "RGB": "225-204-079",
+        "HEX": "#E1CC4F",
+        "de": "Elfenbein",
+        "en": "Ivory",
+        "fr": "Ivoire",
+        "es": "Marfil",
+        "it": "Avorio",
+        "nl": "Ivoorkleurig"
+    },
+    "1015": {
+        "RGB": "230-214-144",
+        "HEX": "#E6D690",
+        "de": "Hellelfenbein",
+        "en": "Light ivory",
+        "fr": "Ivoire clair",
+        "es": "Marfil claro",
+        "it": "Avorio chiaro",
+        "nl": "Licht ivoorkleurig"
+    },
+    "1016": {
+        "RGB": "237-255-033",
+        "HEX": "#EDFF21",
+        "de": "Schwefelgelb",
+        "en": "Sulfur yellow",
+        "fr": "Jaune soufre",
+        "es": "Amarillo azufre",
+        "it": "Giallo zolfo",
+        "nl": "Zwavelgeel"
+    },
+    "1017": {
+        "RGB": "245-208-051",
+        "HEX": "#F5D033",
+        "de": "Safrangelb",
+        "en": "Saffron yellow",
+        "fr": "Jaune safran",
+        "es": "Amarillo azafr\u00e1n",
+        "it": "Giallo zafferano",
+        "nl": "Saffraangeel"
+    },
+    "1018": {
+        "RGB": "248-243-053",
+        "HEX": "#F8F32B",
+        "de": "Zinkgelb",
+        "en": "Zinc yellow",
+        "fr": "Jaune zinc",
+        "es": "Amarillo de zinc",
+        "it": "Giallo zinco",
+        "nl": "Zinkgeel"
+    },
+    "1019": {
+        "RGB": "158-151-100",
+        "HEX": "#9E9764",
+        "de": "Graubeige",
+        "en": "Grey beige",
+        "fr": "Beige gris",
+        "es": "Beige agrisado",
+        "it": "Beige grigiastro",
+        "nl": "Grijsbeige"
+    },
+    "1020": {
+        "RGB": "153-153-080",
+        "HEX": "#999950",
+        "de": "Olivgelb",
+        "en": "Olive yellow",
+        "fr": "Jaune olive",
+        "es": "Amarillo oliva",
+        "it": "Giallo olivastro",
+        "nl": "Olijfgeel"
+    },
+    "1021": {
+        "RGB": "243-218-011",
+        "HEX": "#F3DA0B",
+        "de": "Rapsgelb",
+        "en": "Rape yellow",
+        "fr": "Jaune colza",
+        "es": "Amarillo colza",
+        "it": "Giallo navone",
+        "nl": "Koolzaadgeel"
+    },
+    "1023": {
+        "RGB": "250-210-001",
+        "HEX": "#FAD201",
+        "de": "Verkehrsgelb",
+        "en": "Traffic yellow",
+        "fr": "Jaune signalisation",
+        "es": "Amarillo tr\u00e1fico",
+        "it": "Giallo traffico",
+        "nl": "Verkeersgeel"
+    },
+    "1024": {
+        "RGB": "174-160-075",
+        "HEX": "#AEA04B",
+        "de": "Ockergelb",
+        "en": "Ochre yellow",
+        "fr": "Jaune ocre",
+        "es": "Amarillo ocre",
+        "it": "Giallo ocra",
+        "nl": "Okergeel"
+    },
+    "1026": {
+        "RGB": "255-255-000",
+        "HEX": "#FFFF00",
+        "de": "Leuchtgelb",
+        "en": "Luminous yellow",
+        "fr": "Jaune brillant",
+        "es": "Amarillo brillante",
+        "it": "Giallo brillante",
+        "nl": "Briljantgeel"
+    },
+    "1027": {
+        "RGB": "157-145-001",
+        "HEX": "#9D9101",
+        "de": "Currygelb",
+        "en": "Curry",
+        "fr": "Jaune curry",
+        "es": "Amarillo curry",
+        "it": "Giallo curry",
+        "nl": "Kerriegeel"
+    },
+    "1028": {
+        "RGB": "244-169-000",
+        "HEX": "#F4A900",
+        "de": "Melonengelb",
+        "en": "Melon yellow",
+        "fr": "Jaune melon",
+        "es": "Amarillo mel\u00f3n",
+        "it": "Giallo melone",
+        "nl": "Meloengeel"
+    },
+    "1032": {
+        "RGB": "214-174-001",
+        "HEX": "#D6AE01",
+        "de": "Ginstergelb",
+        "en": "Broom yellow",
+        "fr": "Jaune gen\u00eat",
+        "es": "Amarillo retama",
+        "it": "Giallo scopa",
+        "nl": "Bremgeel"
+    },
+    "1033": {
+        "RGB": "243-165-005",
+        "HEX": "#F3A505",
+        "de": "Dahliengelb",
+        "en": "Dahlia yellow",
+        "fr": "Jaune dahlia",
+        "es": "Amarillo dalia",
+        "it": "Giallo dahlien",
+        "nl": "Dahliageel"
+    },
+    "1034": {
+        "RGB": "239-169-074",
+        "HEX": "#EFA94A",
+        "de": "Pastellgelb",
+        "en": "Pastel yellow",
+        "fr": "Jaune pastel",
+        "es": "Amarillo pastel",
+        "it": "Giallo pastello",
+        "nl": "Pastelgeel"
+    },
+    "1035": {
+        "RGB": "106-093-077",
+        "HEX": "#6A5D4D",
+        "de": "Perlbeige",
+        "en": "Pearl beige",
+        "fr": "Beige nacr\u00e9",
+        "es": "Beige perlado",
+        "it": "Beige perlato",
+        "nl": "Parelmoergrijs"
+    },
+    "1036": {
+        "RGB": "112-083-053",
+        "HEX": "#705335",
+        "de": "Perlgold",
+        "en": "Pearl gold",
+        "fr": "Or nacr\u00e9",
+        "es": "Oro perlado",
+        "it": "Oro perlato",
+        "nl": "Parelmoergoud"
+    },
+    "1037": {
+        "RGB": "243-159-024",
+        "HEX": "#F39F18",
+        "de": "Sonnengelb",
+        "en": "Sun yellow",
+        "fr": "Jaune soleil",
+        "es": "Amarillo sol",
+        "it": "Giallo sole",
+        "nl": "Zonnegeel"
+    },
+    "2000": {
+        "RGB": "237-118-014",
+        "HEX": "#ED760E",
+        "de": "Gelborange",
+        "en": "Yellow orange",
+        "fr": "Orang\u00e9 jaune",
+        "es": "Amarillo naranja",
+        "it": "Arancio giallastro",
+        "nl": "Geeloranje"
+    },
+    "2001": {
+        "RGB": "201-060-032",
+        "HEX": "#C93C20",
+        "de": "Rotorange",
+        "en": "Red orange",
+        "fr": "Orang\u00e9 rouge",
+        "es": "Rojo anaranjado",
+        "it": "Arancio rossastro",
+        "nl": "Roodoranje"
+    },
+    "2002": {
+        "RGB": "203-040-033",
+        "HEX": "#CB2821",
+        "de": "Blutorange",
+        "en": "Vermilion",
+        "fr": "Orang\u00e9 sang",
+        "es": "Naranja sanguineo",
+        "it": "Arancio sanguigno",
+        "nl": "Vermiljoen"
+    },
+    "2003": {
+        "RGB": "255-117-020",
+        "HEX": "#FF7514",
+        "de": "Pastellorange",
+        "en": "Pastel orange",
+        "fr": "Orang\u00e9 pastel",
+        "es": "Naranja p\u00e1lido",
+        "it": "Arancio pastello",
+        "nl": "Pasteloranje"
+    },
+    "2004": {
+        "RGB": "244-070-017",
+        "HEX": "#F44611",
+        "de": "Reinorange",
+        "en": "Pure orange",
+        "fr": "Orang\u00e9 pur",
+        "es": "Naranja puro",
+        "it": "Arancio puro",
+        "nl": "Zuiver oranje"
+    },
+    "2005": {
+        "RGB": "255-035-001",
+        "HEX": "#FF2301",
+        "de": "Leuchtorange",
+        "en": "Luminous orange",
+        "fr": "Orang\u00e9 brillant",
+        "es": "Naranja brillante",
+        "it": "Arancio brillante",
+        "nl": "Briljant oranje"
+    },
+    "2007": {
+        "RGB": "255-164-032",
+        "HEX": "#FFA420",
+        "de": "Leuchthellorange",
+        "en": "Luminous bright orange",
+        "fr": "Orang\u00e9 clair rillant",
+        "es": "Naranja claro brillante",
+        "it": "Arancio chiaro brillante",
+        "nl": "Briljant lichtoranje"
+    },
+    "2008": {
+        "RGB": "247-094-037",
+        "HEX": "#F75E25",
+        "de": "Hellrotorange",
+        "en": "Bright red orange",
+        "fr": "Orang\u00e9 rouge clair",
+        "es": "Rojo claro anaranjado",
+        "it": "Rosso arancio chiaro",
+        "nl": "Licht roodoranje"
+    },
+    "2009": {
+        "RGB": "245-064-033",
+        "HEX": "#F54021",
+        "de": "Verkehrsorange",
+        "en": "Traffic orange",
+        "fr": "Orang\u00e9 signalisation",
+        "es": "Naranja tr\u00e1fico",
+        "it": "Arancio traffico",
+        "nl": "Verkeersoranje"
+    },
+    "2010": {
+        "RGB": "216-075-032",
+        "HEX": "#D84B20",
+        "de": "Signalorange",
+        "en": "Signal orange",
+        "fr": "Orang\u00e9 de s\u00e9curit\u00e9",
+        "es": "Naranja se\u00f1ales",
+        "it": "Arancio segnale",
+        "nl": "Signaaloranje"
+    },
+    "2011": {
+        "RGB": "236-124-038",
+        "HEX": "#EC7C26",
+        "de": "Tieforange",
+        "en": "Deep orange",
+        "fr": "Orang\u00e9 fonc\u00e9",
+        "es": "Naranja intenso",
+        "it": "Arancio profondo",
+        "nl": "Dieporanje"
+    },
+    "2012": {
+        "RGB": "235-106-014",
+        "HEX": "#E55137",
+        "de": "Lachsorange",
+        "en": "Salmon range",
+        "fr": "Orang\u00e9 saumon",
+        "es": "Naranja salm\u00f3n",
+        "it": "Arancio salmone",
+        "nl": "Zalmoranje"
+    },
+    "2013": {
+        "RGB": "195-088-049",
+        "HEX": "#C35831",
+        "de": "Perlorange",
+        "en": "Pearl orange",
+        "fr": "Orang\u00e9 nacr\u00e9",
+        "es": "Naranja perlado",
+        "it": "Arancio perlato",
+        "nl": "Parelmoeroranje"
+    },
+    "3000": {
+        "RGB": "175-043-030",
+        "HEX": "#AF2B1E",
+        "de": "Feuerrot",
+        "en": "Flame red",
+        "fr": "Rouge feu",
+        "es": "Rojo vivo",
+        "it": "Rosso fuoco",
+        "nl": "Vuurrood"
+    },
+    "3001": {
+        "RGB": "165-032-025",
+        "HEX": "#A52019",
+        "de": "Signalrot",
+        "en": "Signal red",
+        "fr": "Rouge de s\u00e9curit\u00e9",
+        "es": "Rojo se\u00f1ales",
+        "it": "Rosso  segnale",
+        "nl": "Signaalrood"
+    },
+    "3002": {
+        "RGB": "162-035-029",
+        "HEX": "#A2231D",
+        "de": "Karminrot",
+        "en": "Carmine red",
+        "fr": "Rouge carmin",
+        "es": "Rojo carmin",
+        "it": "Rosso carminio",
+        "nl": "Karmijnrood"
+    },
+    "3003": {
+        "RGB": "155-017-030",
+        "HEX": "#9B111E",
+        "de": "Rubinrot",
+        "en": "Ruby red",
+        "fr": "Rouge rubis",
+        "es": "Rojo rub\u00ed",
+        "it": "Rosso rubino",
+        "nl": "Robijnrood"
+    },
+    "3004": {
+        "RGB": "117-021-030",
+        "HEX": "#75151E",
+        "de": "Purpurrot",
+        "en": "Purple red",
+        "fr": "Rouge pourpre",
+        "es": "Rojo purpura",
+        "it": "Rosso porpora",
+        "nl": "Purperrood"
+    },
+    "3005": {
+        "RGB": "094-033-041",
+        "HEX": "#5E2129",
+        "de": "Weinrot",
+        "en": "Wine red",
+        "fr": "Rouge vin",
+        "es": "Rojo vino",
+        "it": "Rosso vino",
+        "nl": "Wijnrood"
+    },
+    "3007": {
+        "RGB": "065-034-039",
+        "HEX": "#412227",
+        "de": "Schwarzrot",
+        "en": "Black red",
+        "fr": "Rouge noir",
+        "es": "Rojo negruzco",
+        "it": "Rosso nerastro",
+        "nl": "Zwartrood"
+    },
+    "3009": {
+        "RGB": "100-036-036",
+        "HEX": "#642424",
+        "de": "Oxidrot",
+        "en": "Oxide red",
+        "fr": "Rouge oxyde",
+        "es": "Rojo \u00f3xido",
+        "it": "Rosso  ossido",
+        "nl": "Oxyderood"
+    },
+    "3011": {
+        "RGB": "120-031-025",
+        "HEX": "#781F19",
+        "de": "Braunrot",
+        "en": "Brown red",
+        "fr": "Rouge brun",
+        "es": "Rojo pardo",
+        "it": "Rosso marrone",
+        "nl": "Bruinrood"
+    },
+    "3012": {
+        "RGB": "193-135-107",
+        "HEX": "#C1876B",
+        "de": "Beigerot",
+        "en": "Beige red",
+        "fr": "Rouge beige",
+        "es": "Rojo beige",
+        "it": "Rosso beige",
+        "nl": "Beigerood"
+    },
+    "3013": {
+        "RGB": "161-035-018",
+        "HEX": "#A12312",
+        "de": "Tomatenrot",
+        "en": "Tomato red",
+        "fr": "Rouge tomate",
+        "es": "Rojo tomate",
+        "it": "Rosso pomodoro",
+        "nl": "Tomaatrood"
+    },
+    "3014": {
+        "RGB": "211-110-112",
+        "HEX": "#D36E70",
+        "de": "Altrosa",
+        "en": "Antique pink",
+        "fr": "Vieux rose",
+        "es": "Rojo viejo",
+        "it": "Rosa antico",
+        "nl": "Oudroze"
+    },
+    "3015": {
+        "RGB": "234-137-154",
+        "HEX": "#EA899A",
+        "de": "Hellrosa",
+        "en": "Light pink",
+        "fr": "Rose clair",
+        "es": "Rosa claro",
+        "it": "Rosa chiaro",
+        "nl": "Lichtroze"
+    },
+    "3016": {
+        "RGB": "179-040-033",
+        "HEX": "#B32821",
+        "de": "Korallenrot",
+        "en": "Coral red",
+        "fr": "Rouge corail",
+        "es": "Rojo coral",
+        "it": "Rosso corallo",
+        "nl": "Koraalrood"
+    },
+    "3017": {
+        "RGB": "230-050-068",
+        "HEX": "#E63244",
+        "de": "Ros\u00e9",
+        "en": "Rose",
+        "fr": "Ros\u00e9",
+        "es": "Rosa",
+        "it": "Rosato",
+        "nl": "Bleekrood"
+    },
+    "3018": {
+        "RGB": "213-048-050",
+        "HEX": "#D53032",
+        "de": "Erdbeerrot",
+        "en": "Strawberry red",
+        "fr": "Rouge fraise",
+        "es": "Rojo fresa",
+        "it": "Rosso fragola",
+        "nl": "Aardbeirood"
+    },
+    "3020": {
+        "RGB": "204-006-005",
+        "HEX": "#CC0605",
+        "de": "Verkehrsrot",
+        "en": "Traffic red",
+        "fr": "Rouge signalisation",
+        "es": "Rojo tr\u00e1fico",
+        "it": "Rosso traffico",
+        "nl": "Verkeersrood"
+    },
+    "3022": {
+        "RGB": "217-080-048",
+        "HEX": "#D95030",
+        "de": "Lachsrot",
+        "en": "Salmon pink",
+        "fr": "Rouge saumon",
+        "es": "Rojo salm\u00f3n",
+        "it": "Rosso salmone",
+        "nl": "Zalmrood"
+    },
+    "3024": {
+        "RGB": "248-000-000",
+        "HEX": "#F80000",
+        "de": "Leuchtrot",
+        "en": "Luminous red",
+        "fr": "Rouge brillant",
+        "es": "Rojo brillante",
+        "it": "Rosso brillante",
+        "nl": "Briljantrood"
+    },
+    "3026": {
+        "RGB": "254-000-000",
+        "HEX": "#FE0000",
+        "de": "Leuchthellrot",
+        "en": "Luminous bright red",
+        "fr": "Rouge clair brillant",
+        "es": "Rojo claro brillante",
+        "it": "Rosso chiaro brillante",
+        "nl": "Briljant lichtrood"
+    },
+    "3027": {
+        "RGB": "197-029-052",
+        "HEX": "#C51D34",
+        "de": "Himbeerrot",
+        "en": "Raspberry red",
+        "fr": "Rouge framboise",
+        "es": "Rojo frambuesa",
+        "it": "Rosso lampone",
+        "nl": "Framboosrood"
+    },
+    "3028": {
+        "RGB": "203-050-052",
+        "HEX": "#CB3234",
+        "de": "Reinrot",
+        "en": "Pure  red",
+        "fr": "Rouge puro",
+        "es": "Rojo puro",
+        "it": "Rosso puro",
+        "nl": "Zuiverrood"
+    },
+    "3031": {
+        "RGB": "179-036-040",
+        "HEX": "#B32428",
+        "de": "Orientrot",
+        "en": "Orient red",
+        "fr": "Rouge oriental",
+        "es": "Rojo oriente",
+        "it": "Rosso oriente",
+        "nl": "Ori\u00ebntrood"
+    },
+    "3032": {
+        "RGB": "114-020-034",
+        "HEX": "#721422",
+        "de": "Perlrubinrot",
+        "en": "Pearl ruby red",
+        "fr": "Rouge rubis nacr\u00e9",
+        "es": "Rojo rub\u00ed perlado",
+        "it": "Rosso rubino perlato",
+        "nl": "Parelmoer-donkerrood"
+    },
+    "3033": {
+        "RGB": "180-076-067",
+        "HEX": "#B44C43",
+        "de": "Perlrosa",
+        "en": "Pearl pink",
+        "fr": "Rose nacr\u00e9",
+        "es": "Rosa perlado",
+        "it": "Rosa perlato",
+        "nl": "Parelmoer-lichtrood"
+    },
+    "4001": {
+        "RGB": "222-076-138",
+        "HEX": "#6D3F5B",
+        "de": "Rotlila",
+        "en": "Red lilac",
+        "fr": "Lilas rouge",
+        "es": "Rojo lila",
+        "it": "Lilla rossastro",
+        "nl": "Roodlila"
+    },
+    "4002": {
+        "RGB": "146-043-062",
+        "HEX": "#922B3E",
+        "de": "Rotviolett",
+        "en": "Red violet",
+        "fr": "Violet rouge",
+        "es": "Rojo violeta",
+        "it": "Viola rossastro",
+        "nl": "Roodpaars"
+    },
+    "4003": {
+        "RGB": "222-076-138",
+        "HEX": "#DE4C8A",
+        "de": "Erikaviolett",
+        "en": "Heather violet",
+        "fr": "Violet bruy\u00e8re",
+        "es": "Violeta \u00e9rica",
+        "it": "Viola erica",
+        "nl": "Heidepaars"
+    },
+    "4004": {
+        "RGB": "110-028-052",
+        "HEX": "#641C34",
+        "de": "Bordeauxviolett",
+        "en": "Claret violet",
+        "fr": "Violet bordeaux",
+        "es": "Burdeos",
+        "it": "Viola bordeaux",
+        "nl": "Bordeauxpaars"
+    },
+    "4005": {
+        "RGB": "108-070-117",
+        "HEX": "#6C4675",
+        "de": "Blaulila",
+        "en": "Blue lilac",
+        "fr": "Lilas bleu",
+        "es": "Lila azulado",
+        "it": "Lilla bluastro",
+        "nl": "Blauwlila"
+    },
+    "4006": {
+        "RGB": "160-052-114",
+        "HEX": "#A03472",
+        "de": "Verkehrspurpur",
+        "en": "Traffic purple",
+        "fr": "Pourpre signalisation",
+        "es": "P\u00farpur\u00e1 tr\u00e1fico",
+        "it": "Porpora traffico",
+        "nl": "Verkeerspurper"
+    },
+    "4007": {
+        "RGB": "074-025-044",
+        "HEX": "#4A192C",
+        "de": "Purpurviolett",
+        "en": "Purple violet",
+        "fr": "Violet pourpre",
+        "es": "Violeta p\u00farpura",
+        "it": "Porpora violetto",
+        "nl": "Purperviolet"
+    },
+    "4008": {
+        "RGB": "144-070-132",
+        "HEX": "#924E7D",
+        "de": "Signalviolett",
+        "en": "Signal violet",
+        "fr": "Violet de s\u00e9curit\u00e9",
+        "es": "Violeta se\u00f1ales",
+        "it": "Violetto segnale",
+        "nl": "Signaalviolet"
+    },
+    "4009": {
+        "RGB": "164-125-144",
+        "HEX": "#A18594",
+        "de": "Pastellviolett",
+        "en": "Pastel violet",
+        "fr": "Violet pastel",
+        "es": "Violeta pastel",
+        "it": "Violetto pastello",
+        "nl": "Pastelviolet"
+    },
+    "4010": {
+        "RGB": "215-045-109",
+        "HEX": "#CF3476",
+        "de": "Telemagenta",
+        "en": "Telemagenta",
+        "fr": "Telemagenta",
+        "es": "Magenta tele",
+        "it": "Tele Magenta",
+        "nl": "Telemagenta"
+    },
+    "4011": {
+        "RGB": "134-115-161",
+        "HEX": "#8673A1",
+        "de": "Perlviolett",
+        "en": "Pearl violet",
+        "fr": "Violet nacr\u00e9",
+        "es": "Violeta perlado",
+        "it": "Violetto perlato",
+        "nl": "Parelmoer-donkerviolet"
+    },
+    "4012": {
+        "RGB": "108-104-129",
+        "HEX": "#6C6874",
+        "de": "Perlbrombeer",
+        "en": "Pearl black berry",
+        "fr": "M\u00fbre nacr\u00e9",
+        "es": "Morado perlado",
+        "it": "Mora perlato",
+        "nl": "Parelmoer-lichtviolet"
+    },
+    "5000": {
+        "RGB": "042-046-075",
+        "HEX": "#354D73",
+        "de": "Violettblau",
+        "en": "Violet blue",
+        "fr": "Bleu violet",
+        "es": "Azul violeta",
+        "it": "Blu violaceo",
+        "nl": "Paarsblauw"
+    },
+    "5001": {
+        "RGB": "031-052-056",
+        "HEX": "#1F3438",
+        "de": "Gr\u00fcnblau",
+        "en": "Green blue",
+        "fr": "Bleu vert",
+        "es": "Azul verdoso",
+        "it": "Blu verdastro",
+        "nl": "Groenblauw"
+    },
+    "5002": {
+        "RGB": "032-033-079",
+        "HEX": "#20214F",
+        "de": "Ultramarinblau",
+        "en": "Ultramarine blue",
+        "fr": "Bleu outremer",
+        "es": "Azul ultramar",
+        "it": "Blu oltremare",
+        "nl": "Ultramarijnblauw"
+    },
+    "5003": {
+        "RGB": "029-030-051",
+        "HEX": "#1D1E33",
+        "de": "Saphirblau",
+        "en": "Saphire blue",
+        "fr": "Bleu saphir",
+        "es": "Azul zafiro",
+        "it": "Blu zaffiro",
+        "nl": "Saffierblauw"
+    },
+    "5004": {
+        "RGB": "032-033-079",
+        "HEX": "#18171C",
+        "de": "Schwarzblau",
+        "en": "Black blue",
+        "fr": "Bleu noir",
+        "es": "Azul negruzco",
+        "it": "Blu nerastro",
+        "nl": "Zwartblauw"
+    },
+    "5005": {
+        "RGB": "030-045-110",
+        "HEX": "#1E2460",
+        "de": "Signalblau",
+        "en": "Signal blue",
+        "fr": "Bleu de s\u00e9curit\u00e9",
+        "es": "Azul se\u00f1ales",
+        "it": "Blu segnale",
+        "nl": "Signaalblauw"
+    },
+    "5007": {
+        "RGB": "062-095-138",
+        "HEX": "#3E5F8A",
+        "de": "Brillantblau",
+        "en": "Brillant blue",
+        "fr": "Bleu brillant",
+        "es": "Azul brillante",
+        "it": "Blu brillante",
+        "nl": "Briljantblauw"
+    },
+    "5008": {
+        "RGB": "038-037-045",
+        "HEX": "#26252D",
+        "de": "Graublau",
+        "en": "Grey blue",
+        "fr": "Bleu gris",
+        "es": "Azul gris\u00e1ceo",
+        "it": "Blu grigiastro",
+        "nl": "Grijsblauw"
+    },
+    "5009": {
+        "RGB": "002-086-105",
+        "HEX": "#025669",
+        "de": "Azurblau",
+        "en": "Azure blue",
+        "fr": "Bleu azur",
+        "es": "Azul azur",
+        "it": "Blu  azzurro",
+        "nl": "Azuurblauw"
+    },
+    "5010": {
+        "RGB": "014-041-075",
+        "HEX": "#0E294B",
+        "de": "Enzianblau",
+        "en": "Gentian blue",
+        "fr": "Bleu gentiane",
+        "es": "Azul genciana",
+        "it": "Blu  genziana",
+        "nl": "Gentiaanblauw"
+    },
+    "5011": {
+        "RGB": "035-026-036",
+        "HEX": "#231A24",
+        "de": "Stahlblau",
+        "en": "Steel blue",
+        "fr": "Bleu acier",
+        "es": "Azul acero",
+        "it": "Blu acciaio",
+        "nl": "Staalblauw"
+    },
+    "5012": {
+        "RGB": "059-131-189",
+        "HEX": "#3B83BD",
+        "de": "Lichtblau",
+        "en": "Light blue",
+        "fr": "Bleu clair",
+        "es": "Azul luminoso",
+        "it": "Blu luce",
+        "nl": "Lichtblauw"
+    },
+    "5013": {
+        "RGB": "037-041-074",
+        "HEX": "#1E213D",
+        "de": "Kobaltblau",
+        "en": "Cobalt blue",
+        "fr": "Bleu cobalt",
+        "es": "Azul cobalto",
+        "it": "Blu cobalto",
+        "nl": "Kobaltblauw"
+    },
+    "5014": {
+        "RGB": "096-111-140",
+        "HEX": "#606E8C",
+        "de": "Taubenblau",
+        "en": "Pigeon blue",
+        "fr": "Bleu pigeon",
+        "es": "Azul olombino",
+        "it": "Blu colomba",
+        "nl": "Duifblauw"
+    },
+    "5015": {
+        "RGB": "034-113-179",
+        "HEX": "#2271B3",
+        "de": "Himmelblau",
+        "en": "Sky blue",
+        "fr": "Bleu ciel",
+        "es": "Azul celeste",
+        "it": "Blu cielo",
+        "nl": "Hemelsblauw"
+    },
+    "5017": {
+        "RGB": "006-057-113",
+        "HEX": "#063971",
+        "de": "Verkehrsblau",
+        "en": "Traffic blue",
+        "fr": "Bleu signalisation",
+        "es": "Azul tr\u00e1fico",
+        "it": "Blu traffico",
+        "nl": "Verkeersblauw"
+    },
+    "5018": {
+        "RGB": "063-136-143",
+        "HEX": "#3F888F",
+        "de": "T\u00fcrkisblau",
+        "en": "Turquoise blue",
+        "fr": "Bleu turquoise",
+        "es": "Azul turquesa",
+        "it": "Blu turchese",
+        "nl": "Turkooisblauw"
+    },
+    "5019": {
+        "RGB": "027-085-131",
+        "HEX": "#1B5583",
+        "de": "Capriblau",
+        "en": "Capri blue",
+        "fr": "Bleu capri",
+        "es": "Azul capri",
+        "it": "Blu capri",
+        "nl": "Capriblauw"
+    },
+    "5020": {
+        "RGB": "029-051-074",
+        "HEX": "#1D334A",
+        "de": "Ozeanblau",
+        "en": "Ocean blue",
+        "fr": "Bleu oc\u00e9an",
+        "es": "Azul oceano",
+        "it": "Blu oceano",
+        "nl": "Oceaanblauw"
+    },
+    "5021": {
+        "RGB": "037-109-123",
+        "HEX": "#256D7B",
+        "de": "Wasserblau",
+        "en": "Water blue",
+        "fr": "Bleu d\u2019eau",
+        "es": "Azul agua",
+        "it": "Blu acqua",
+        "nl": "Waterblauw"
+    },
+    "5022": {
+        "RGB": "037-040-080",
+        "HEX": "#252850",
+        "de": "Nachtblau",
+        "en": "Night blue",
+        "fr": "Bleu nocturne",
+        "es": "Azul noche",
+        "it": "Blu notte",
+        "nl": "Nachtblauw"
+    },
+    "5023": {
+        "RGB": "073-103-141",
+        "HEX": "#49678D",
+        "de": "Fernblau",
+        "en": "Distant blue",
+        "fr": "Bleu distant",
+        "es": "Azul lejan\u00eda",
+        "it": "Blu distante",
+        "nl": "Verblauw"
+    },
+    "5024": {
+        "RGB": "093-155-155",
+        "HEX": "#5D9B9B",
+        "de": "Pastellblau",
+        "en": "Pastel blue",
+        "fr": "Bleu pastel",
+        "es": "Azul pastel",
+        "it": "Blu pastello",
+        "nl": "Pastelblauw"
+    },
+    "5025": {
+        "RGB": "042-100-120",
+        "HEX": "#2A6478",
+        "de": "Perlenzian",
+        "en": "Pearl gentian blue",
+        "fr": "Gentiane nacr\u00e9",
+        "es": "Gencian perlado",
+        "it": "Blu genziana perlato",
+        "nl": "Parelmoerblauw"
+    },
+    "5026": {
+        "RGB": "016-044-084",
+        "HEX": "#102C54",
+        "de": "Perlnachtblau",
+        "en": "Pearl night blue",
+        "fr": "Bleu nuit nacr\u00e9",
+        "es": "Azul noche perlado",
+        "it": "Blu notte perlato",
+        "nl": "Parelmoer-nachtblauw"
+    },
+    "6000": {
+        "RGB": "049-102-080",
+        "HEX": "#316650",
+        "de": "Patinagr\u00fcn",
+        "en": "Patina green",
+        "fr": "Vert patine",
+        "es": "Verde patina",
+        "it": "Verde patina",
+        "nl": "Patinagroen"
+    },
+    "6001": {
+        "RGB": "040-114-051",
+        "HEX": "#287233",
+        "de": "Smaragdgr\u00fcn",
+        "en": "Emerald green",
+        "fr": "Vert \u00e9meraude",
+        "es": "Verde esmeralda",
+        "it": "Verde smeraldo",
+        "nl": "Smaragdgroen"
+    },
+    "6002": {
+        "RGB": "045-087-044",
+        "HEX": "#2D572C",
+        "de": "Laubgr\u00fcn",
+        "en": "Leaf green",
+        "fr": "Vert feuillage",
+        "es": "Verde hoja",
+        "it": "Verde foglia",
+        "nl": "Loofgroen"
+    },
+    "6003": {
+        "RGB": "066-070-050",
+        "HEX": "#424632",
+        "de": "Olivgr\u00fcn",
+        "en": "Olive green",
+        "fr": "Vert olive",
+        "es": "Verde oliva",
+        "it": "Verde oliva",
+        "nl": "Olijfgroen"
+    },
+    "6004": {
+        "RGB": "031-058-061",
+        "HEX": "#1F3A3D",
+        "de": "Blaugr\u00fcn",
+        "en": "Blue green",
+        "fr": "Vert bleu",
+        "es": "Verde azulado",
+        "it": "Verde bluastro",
+        "nl": "Blauwgroen"
+    },
+    "6005": {
+        "RGB": "047-069-056",
+        "HEX": "#2F4538",
+        "de": "Moosgr\u00fcn",
+        "en": "Moss green",
+        "fr": "Vert mousse",
+        "es": "Verde musgo",
+        "it": "Verde muschio",
+        "nl": "Mosgroen"
+    },
+    "6006": {
+        "RGB": "062-059-050",
+        "HEX": "#3E3B32",
+        "de": "Grauoliv",
+        "en": "Grey olive",
+        "fr": "Olive gris",
+        "es": "Oliva gris\u00e1ceo",
+        "it": "Oliva grigiastro",
+        "nl": "Grijs olijfgroen"
+    },
+    "6007": {
+        "RGB": "052-059-041",
+        "HEX": "#343B29",
+        "de": "Flaschengr\u00fcn",
+        "en": "Bottle green",
+        "fr": "Vert bouteille",
+        "es": "Verde botella",
+        "it": "Verde bottiglia",
+        "nl": "Flessegroen"
+    },
+    "6008": {
+        "RGB": "057-053-042",
+        "HEX": "#39352A",
+        "de": "Braungr\u00fcn",
+        "en": "Brown green",
+        "fr": "Vert brun",
+        "es": "Verde parduzco",
+        "it": "Verde brunastro",
+        "nl": "Bruingroen"
+    },
+    "6009": {
+        "RGB": "049-055-043",
+        "HEX": "#31372B",
+        "de": "Tannengr\u00fcn",
+        "en": "Fir green",
+        "fr": "Vert sapin",
+        "es": "Verde abeto",
+        "it": "Verde abete",
+        "nl": "Dennegroen"
+    },
+    "6010": {
+        "RGB": "053-104-045",
+        "HEX": "#35682D",
+        "de": "Grasgr\u00fcn",
+        "en": "Grass green",
+        "fr": "Vert herbe",
+        "es": "Verde hierba",
+        "it": "Verde erba",
+        "nl": "Grasgroen"
+    },
+    "6011": {
+        "RGB": "088-114-070",
+        "HEX": "#587246",
+        "de": "Resedagr\u00fcn",
+        "en": "Reseda green",
+        "fr": "Vert r\u00e9s\u00e9da",
+        "es": "Verde reseda",
+        "it": "Verde reseda",
+        "nl": "Resedagroen"
+    },
+    "6012": {
+        "RGB": "052-062-064",
+        "HEX": "#343E40",
+        "de": "Schwarzgr\u00fcn",
+        "en": "Black green",
+        "fr": "Vert noir",
+        "es": "Verde negruzco",
+        "it": "Verde nerastro",
+        "nl": "Zwartgroen"
+    },
+    "6013": {
+        "RGB": "108-113-086",
+        "HEX": "#6C7156",
+        "de": "Schilfgr\u00fcn",
+        "en": "Reed green",
+        "fr": "Vert jonc",
+        "es": "Verde ca\u00f1a",
+        "it": "Verde canna",
+        "nl": "Rietgroen"
+    },
+    "6014": {
+        "RGB": "071-064-046",
+        "HEX": "#47402E",
+        "de": "Gelboliv",
+        "en": "Yellow olive",
+        "fr": "Olive jaune",
+        "es": "Amarillo oliva",
+        "it": "Oliva giallastro",
+        "nl": "Geel olijfgroen"
+    },
+    "6015": {
+        "RGB": "059-060-054",
+        "HEX": "#3B3C36",
+        "de": "Schwarzoliv",
+        "en": "Black olive",
+        "fr": "Olive noir",
+        "es": "Oliva negruzco",
+        "it": "Oliva nerastro",
+        "nl": "Zwart olijfgroen"
+    },
+    "6016": {
+        "RGB": "030-089-069",
+        "HEX": "#1E5945",
+        "de": "T\u00fcrkisgr\u00fcn",
+        "en": "Turquoise green",
+        "fr": "Vert turquoise",
+        "es": "Verde turquesa",
+        "it": "Verde turchese",
+        "nl": "Turkooisgroen"
+    },
+    "6017": {
+        "RGB": "076-145-065",
+        "HEX": "#4C9141",
+        "de": "Maigr\u00fcn",
+        "en": "May green",
+        "fr": "Vert mai",
+        "es": "Verde mayo",
+        "it": "Verde maggio",
+        "nl": "Meigroen"
+    },
+    "6018": {
+        "RGB": "087-166-057",
+        "HEX": "#57A639",
+        "de": "Gelbgr\u00fcn",
+        "en": "Yellow green",
+        "fr": "Vert jaune",
+        "es": "Verde amarillento",
+        "it": "Verde giallastro",
+        "nl": "Geelgroen"
+    },
+    "6019": {
+        "RGB": "189-236-182",
+        "HEX": "#BDECB6",
+        "de": "Wei\u00dfgr\u00fcn",
+        "en": "Pastel green",
+        "fr": "Vert blanc",
+        "es": "Verde lanquecino",
+        "it": "Verde biancastro",
+        "nl": "Witgroen"
+    },
+    "6020": {
+        "RGB": "046-058-035",
+        "HEX": "#2E3A23",
+        "de": "Chromoxidgr\u00fcn",
+        "en": "Chrome green",
+        "fr": "Vert oxyde chromique",
+        "es": "Verde cromo",
+        "it": "Verde cromo",
+        "nl": "Chroom-oxydegroen"
+    },
+    "6021": {
+        "RGB": "137-172-118",
+        "HEX": "#89AC76",
+        "de": "Blassgr\u00fcn",
+        "en": "Pale green",
+        "fr": "Vert p\u00e2le",
+        "es": "Verde p\u00e1lido",
+        "it": "Verde pallido",
+        "nl": "Bleekgroen"
+    },
+    "6022": {
+        "RGB": "037-034-027",
+        "HEX": "#25221B",
+        "de": "Braunoliv",
+        "en": "Olive drab",
+        "fr": "Olive brun",
+        "es": "Oliva parduzco",
+        "it": "Oliva brunastro",
+        "nl": "Bruin olijfgroen"
+    },
+    "6024": {
+        "RGB": "048-132-070",
+        "HEX": "#308446",
+        "de": "Verkehrsgr\u00fcn",
+        "en": "Traffic green",
+        "fr": "Vert signalisation",
+        "es": "Verde tr\u00e1fico",
+        "it": "Verde traffico",
+        "nl": "Verkeersgroen"
+    },
+    "6025": {
+        "RGB": "061-100-045",
+        "HEX": "#3D642D",
+        "de": "Farngr\u00fcn",
+        "en": "Fern green",
+        "fr": "Vert foug\u00e8re",
+        "es": "Verde helecho",
+        "it": "Verde felce",
+        "nl": "Varengroen"
+    },
+    "6026": {
+        "RGB": "001-093-082",
+        "HEX": "#015D52",
+        "de": "Opalgr\u00fcn",
+        "en": "Opal green",
+        "fr": "Vert opale",
+        "es": "Verde opalo",
+        "it": "Verde opale",
+        "nl": "Opaalgroen"
+    },
+    "6027": {
+        "RGB": "132-195-190",
+        "HEX": "#84C3BE",
+        "de": "Lichtgr\u00fcn",
+        "en": "Light green",
+        "fr": "Vert clair",
+        "es": "Verde luminoso",
+        "it": "Verde chiaro",
+        "nl": "Lichtgroen"
+    },
+    "6028": {
+        "RGB": "044-085-069",
+        "HEX": "#2C5545",
+        "de": "Kieferngr\u00fcn",
+        "en": "Pine green",
+        "fr": "Vert pin",
+        "es": "Verde pino",
+        "it": "Verde pino",
+        "nl": "Pijnboomgroen"
+    },
+    "6029": {
+        "RGB": "032-096-061",
+        "HEX": "#20603D",
+        "de": "Minzgr\u00fcn",
+        "en": "Mint green",
+        "fr": "Vert menthe",
+        "es": "Verde menta",
+        "it": "Verde menta",
+        "nl": "Mintgroen"
+    },
+    "6032": {
+        "RGB": "049-127-067",
+        "HEX": "#317F43",
+        "de": "Signalgr\u00fcn",
+        "en": "Signal green",
+        "fr": "Vert de s\u00e9curit\u00e9",
+        "es": "Verde se\u00f1ales",
+        "it": "Verde segnale",
+        "nl": "Signaalgroen"
+    },
+    "6033": {
+        "RGB": "073-126-118",
+        "HEX": "#497E76",
+        "de": "Mintt\u00fcrkis",
+        "en": "Mint turquoise",
+        "fr": "Turquoise menthe",
+        "es": "Turquesa menta",
+        "it": "Turchese menta",
+        "nl": "Mintturquoise"
+    },
+    "6034": {
+        "RGB": "127-181-181",
+        "HEX": "#7FB5B5",
+        "de": "Pastellt\u00fcrkis",
+        "en": "Pastel turquoise",
+        "fr": "Turquoise pastel",
+        "es": "Turquesa pastel",
+        "it": "Turchese pastello",
+        "nl": "Pastelturquoise"
+    },
+    "6035": {
+        "RGB": "028-084-045",
+        "HEX": "#1C542D",
+        "de": "Perlgr\u00fcn",
+        "en": "Pearl green",
+        "fr": "Vert nacr\u00e9",
+        "es": "Verde perlado",
+        "it": "Verde perlato",
+        "nl": "Parelmoer-donkergroen"
+    },
+    "6036": {
+        "RGB": "022-053-055",
+        "HEX": "#193737",
+        "de": "Perlopalgr\u00fcn",
+        "en": "Pearl opal green",
+        "fr": "Vert opal nacr\u00e9",
+        "es": "Verde \u00f3palo perlado",
+        "it": "Verde opalo perlato",
+        "nl": "Parelmoer-lichtgroen"
+    },
+    "6037": {
+        "RGB": "000-143-057",
+        "HEX": "#008F39",
+        "de": "Reingr\u00fcn",
+        "en": "Pure green",
+        "fr": "Vert pur",
+        "es": "Verde puro",
+        "it": "Verde puro",
+        "nl": "Zuivergroen"
+    },
+    "6038": {
+        "RGB": "000-187-045",
+        "HEX": "#00BB2D",
+        "de": "Leuchtgr\u00fcn",
+        "en": "Luminous green",
+        "fr": "Vert brillant",
+        "es": "Verde brillante",
+        "it": "Verde brillante",
+        "nl": "Briljantgroen"
+    },
+    "7000": {
+        "RGB": "120-133-139",
+        "HEX": "#78858B",
+        "de": "Fehgrau",
+        "en": "Squirrel grey",
+        "fr": "Gris petit-gris",
+        "es": "Gris ardilla",
+        "it": "Grigio vaio",
+        "nl": "Pelsgrijs"
+    },
+    "7001": {
+        "RGB": "138-149-151",
+        "HEX": "#8A9597",
+        "de": "Silbergrau",
+        "en": "Silver grey",
+        "fr": "Gris argent",
+        "es": "Gris plata",
+        "it": "Grigio argento",
+        "nl": "Zilvergrijs"
+    },
+    "7002": {
+        "RGB": "126-123-082",
+        "HEX": "#7E7B52",
+        "de": "Olivgrau",
+        "en": "Olive grey",
+        "fr": "Gris olive",
+        "es": "Gris oliva",
+        "it": "Grigio olivastro",
+        "nl": "Olijfgrijs"
+    },
+    "7003": {
+        "RGB": "108-112-089",
+        "HEX": "#6C7059",
+        "de": "Moosgrau",
+        "en": "Moss grey",
+        "fr": "Gris mousse",
+        "es": "Gris musgo",
+        "it": "Grigio muschio",
+        "nl": "Mosgrijs"
+    },
+    "7004": {
+        "RGB": "150-153-146",
+        "HEX": "#969992",
+        "de": "Signalgrau",
+        "en": "Signal grey",
+        "fr": "Gris de s\u00e9curit\u00e9",
+        "es": "Gris se\u00f1ales",
+        "it": "Grigio segnale",
+        "nl": "Signaalgrijs"
+    },
+    "7005": {
+        "RGB": "100-107-099",
+        "HEX": "#646B63",
+        "de": "Mausgrau",
+        "en": "Mouse grey",
+        "fr": "Gris souris",
+        "es": "Gris rat\u00f3n",
+        "it": "Grigio topo",
+        "nl": "Muisgrijs"
+    },
+    "7006": {
+        "RGB": "109-101-082",
+        "HEX": "#6D6552",
+        "de": "Beigegrau",
+        "en": "Beige grey",
+        "fr": "Gris beige",
+        "es": "Gris beige",
+        "it": "Grigio beige",
+        "nl": "Beigegrijs"
+    },
+    "7008": {
+        "RGB": "106-095-049",
+        "HEX": "#6A5F31",
+        "de": "Khakigrau",
+        "en": "Khaki grey",
+        "fr": "Gris kaki",
+        "es": "Gris caqui",
+        "it": "Grigio kaki",
+        "nl": "Kakigrijs"
+    },
+    "7009": {
+        "RGB": "077-086-069",
+        "HEX": "#4D5645",
+        "de": "Gr\u00fcngrau",
+        "en": "Green grey",
+        "fr": "Gris vert",
+        "es": "Gris verdoso",
+        "it": "Grigio verdastro",
+        "nl": "Groengrijs"
+    },
+    "7010": {
+        "RGB": "076-081-074",
+        "HEX": "#4C514A",
+        "de": "Zeltgrau",
+        "en": "Tarpaulin grey",
+        "fr": "Gris tente",
+        "es": "Gris lona",
+        "it": "Grigio tenda",
+        "nl": "Zeildoekgrijs"
+    },
+    "7011": {
+        "RGB": "067-075-077",
+        "HEX": "#434B4D",
+        "de": "Eisengrau",
+        "en": "Iron grey",
+        "fr": "Gris fer",
+        "es": "Gris hierro",
+        "it": "Grigio ferro",
+        "nl": "IJzergrijs"
+    },
+    "7012": {
+        "RGB": "078-087-084",
+        "HEX": "#4E5754",
+        "de": "Basaltgrau",
+        "en": "Basalt grey",
+        "fr": "Gris basalte",
+        "es": "Gris basalto",
+        "it": "Grigio basalto",
+        "nl": "Bazaltgrijs"
+    },
+    "7013": {
+        "RGB": "070-069-049",
+        "HEX": "#464531",
+        "de": "Braungrau",
+        "en": "Brown grey",
+        "fr": "Gris brun",
+        "es": "Gris parduzco",
+        "it": "Grigio brunastro",
+        "nl": "Bruingrijs"
+    },
+    "7015": {
+        "RGB": "067-071-080",
+        "HEX": "#434750",
+        "de": "Schiefergrau",
+        "en": "Slate grey",
+        "fr": "Gris ardoise",
+        "es": "Gris pizarra",
+        "it": "Grigio ardesia",
+        "nl": "Leigrijs"
+    },
+    "7016": {
+        "RGB": "041-049-051",
+        "HEX": "#293133",
+        "de": "Anthrazitgrau",
+        "en": "Anthracite grey",
+        "fr": "Gris anthracite",
+        "es": "Gris antracita",
+        "it": "Grigio antracite",
+        "nl": "Antracietgrijs"
+    },
+    "7021": {
+        "RGB": "035-040-043",
+        "HEX": "#23282B",
+        "de": "Schwarzgrau",
+        "en": "Black grey",
+        "fr": "Gris noir",
+        "es": "Gris negruzco",
+        "it": "Grigio nerastro",
+        "nl": "Zwartgrijs"
+    },
+    "7022": {
+        "RGB": "051-047-044",
+        "HEX": "#332F2C",
+        "de": "Umbragrau",
+        "en": "Umbra grey",
+        "fr": "Gris terre d\u2019ombre",
+        "es": "Gris sombra",
+        "it": "Grigio ombra",
+        "nl": "Ombergrijs"
+    },
+    "7023": {
+        "RGB": "104-108-094",
+        "HEX": "#686C5E",
+        "de": "Betongrau",
+        "en": "Concrete grey",
+        "fr": "Gris b\u00e9ton",
+        "es": "Gris hormig\u00f3n",
+        "it": "Grigio calcestruzzo",
+        "nl": "Betongrijs"
+    },
+    "7024": {
+        "RGB": "071-074-081",
+        "HEX": "#474A51",
+        "de": "Graphitgrau",
+        "en": "Graphite grey",
+        "fr": "Gris graphite",
+        "es": "Gris grafita",
+        "it": "Grigio grafite",
+        "nl": "Grafietgrijs"
+    },
+    "7026": {
+        "RGB": "047-053-059",
+        "HEX": "#2F353B",
+        "de": "Granitgrau",
+        "en": "Granite grey",
+        "fr": "Gris granit",
+        "es": "Gris granito",
+        "it": "Grigio granito",
+        "nl": "Granietgrijs"
+    },
+    "7030": {
+        "RGB": "139-140-122",
+        "HEX": "#8B8C7A",
+        "de": "Steingrau",
+        "en": "Stone grey",
+        "fr": "Gris pierre",
+        "es": "Gris piedra",
+        "it": "Grigio pietra",
+        "nl": "Steengrijs"
+    },
+    "7031": {
+        "RGB": "071-075-078",
+        "HEX": "#474B4E",
+        "de": "Blaugrau",
+        "en": "Blue grey",
+        "fr": "Gris bleu",
+        "es": "Gris azulado",
+        "it": "Grigio bluastro",
+        "nl": "Blauwgrijs"
+    },
+    "7032": {
+        "RGB": "184-183-153",
+        "HEX": "#B8B799",
+        "de": "Kieselgrau",
+        "en": "Pebble grey",
+        "fr": "Gris silex",
+        "es": "Gris guijarro",
+        "it": "Grigio ghiaia",
+        "nl": "Kiezelgrijs"
+    },
+    "7033": {
+        "RGB": "125-132-113",
+        "HEX": "#7D8471",
+        "de": "Zementgrau",
+        "en": "Cement grey",
+        "fr": "Gris ciment",
+        "es": "Gris cemento",
+        "it": "Grigio cemento",
+        "nl": "Cementgrijs"
+    },
+    "7034": {
+        "RGB": "143-139-102",
+        "HEX": "#8F8B66",
+        "de": "Gelbgrau",
+        "en": "Yellow grey",
+        "fr": "Gris jaune",
+        "es": "Gris amarillento",
+        "it": "Grigio giallastro",
+        "nl": "Geelgrijs"
+    },
+    "7035": {
+        "RGB": "215-215-215",
+        "HEX": "#D7D7D7",
+        "de": "Lichtgrau",
+        "en": "Light grey",
+        "fr": "Gris clair",
+        "es": "Gris luminoso",
+        "it": "Grigio luce",
+        "nl": "Lichtgrijs"
+    },
+    "7036": {
+        "RGB": "127-118-121",
+        "HEX": "#7F7679",
+        "de": "Platingrau",
+        "en": "Platinum grey",
+        "fr": "Gris platine",
+        "es": "Gris platino",
+        "it": "Grigio platino",
+        "nl": "Platinagrijs"
+    },
+    "7037": {
+        "RGB": "125-127-120",
+        "HEX": "#7D7F7D",
+        "de": "Staubgrau",
+        "en": "Dusty grey",
+        "fr": "Gris poussi\u00e8re",
+        "es": "Gris polvo",
+        "it": "Grigio polvere",
+        "nl": "Stofgrijs"
+    },
+    "7038": {
+        "RGB": "195-195-195",
+        "HEX": "#B5B8B1",
+        "de": "Achatgrau",
+        "en": "Agate grey",
+        "fr": "Gris agate",
+        "es": "Gris \u00e1gata",
+        "it": "Grigio agata",
+        "nl": "Agaatgrijs"
+    },
+    "7039": {
+        "RGB": "108-105-096",
+        "HEX": "#6C6960",
+        "de": "Quarzgrau",
+        "en": "Quartz grey",
+        "fr": "Gris quartz",
+        "es": "Gris cuarzo",
+        "it": "Grigio quarzo",
+        "nl": "Kwartsgrijs"
+    },
+    "7040": {
+        "RGB": "157-161-170",
+        "HEX": "#9DA1AA",
+        "de": "Fenstergrau",
+        "en": "Window grey",
+        "fr": "Gris fen\u00eatre",
+        "es": "Gris ventana",
+        "it": "Grigio finestra",
+        "nl": "Venstergrijs"
+    },
+    "7042": {
+        "RGB": "141-148-141",
+        "HEX": "#8D948D",
+        "de": "Verkehrsgrau A",
+        "en": "Traffic grey A",
+        "fr": "Gris signalisation A",
+        "es": "Gris tr\u00e1fico A",
+        "it": "Grigio traffico A",
+        "nl": "Verkeesgrijs A"
+    },
+    "7043": {
+        "RGB": "078-084-082",
+        "HEX": "#4E5452",
+        "de": "Verkehrsgrau B",
+        "en": "Traffic grey B",
+        "fr": "Gris signalisation B",
+        "es": "Gris tr\u00e1fico B",
+        "it": "Grigio traffico B",
+        "nl": "Verkeersgrijs B"
+    },
+    "7044": {
+        "RGB": "202-196-176",
+        "HEX": "#CAC4B0",
+        "de": "Seidengrau",
+        "en": "Silk grey",
+        "fr": "Gris soie",
+        "es": "Gris seda",
+        "it": "Grigio seta",
+        "nl": "Zijdegrijs"
+    },
+    "7045": {
+        "RGB": "144-144-144",
+        "HEX": "#909090",
+        "de": "Telegrau 1",
+        "en": "Telegrey 1",
+        "fr": "Telegris 1",
+        "es": "Gris tele 1",
+        "it": "Tele grigio 1",
+        "nl": "Telegrijs 1"
+    },
+    "7046": {
+        "RGB": "130-137-143",
+        "HEX": "#82898F",
+        "de": "Telegrau 2",
+        "en": "Telegrey 2",
+        "fr": "Telegris 2",
+        "es": "Gris tele 2",
+        "it": "Tele grigio 2",
+        "nl": "Telegrijs 2"
+    },
+    "7047": {
+        "RGB": "208-208-208",
+        "HEX": "#D0D0D0",
+        "de": "Telegrau 4",
+        "en": "Telegrey 4",
+        "fr": "Telegris 4",
+        "es": "Gris tele 4",
+        "it": "Tele grigio 4",
+        "nl": "Telegrijs 4"
+    },
+    "7048": {
+        "RGB": "137-129-118",
+        "HEX": "#898176",
+        "de": "Perlmausgrau",
+        "en": "Pearl mouse grey",
+        "fr": "Gris souris nacr\u00e9",
+        "es": "Gris musgo perlado",
+        "it": "Grigio topo perlato",
+        "nl": "Parelmoer-muisgrijs"
+    },
+    "8000": {
+        "RGB": "130-108-052",
+        "HEX": "#826C34",
+        "de": "Gr\u00fcnbraun",
+        "en": "Green brown",
+        "fr": "Brun vert",
+        "es": "Pardo verdoso",
+        "it": "Marrone verdastro",
+        "nl": "Groenbruin"
+    },
+    "8001": {
+        "RGB": "149-095-032",
+        "HEX": "#955F20",
+        "de": "Ockerbraun",
+        "en": "Ochre brown",
+        "fr": "Brun terre de Sienne",
+        "es": "Pardo ocre",
+        "it": "Marrone ocra",
+        "nl": "Okerbruin"
+    },
+    "8002": {
+        "RGB": "108-059-042",
+        "HEX": "#6C3B2A",
+        "de": "Signalbraun",
+        "en": "Signal brown",
+        "fr": "Brun de s\u00e9curit\u00e9",
+        "es": "Marr\u00f3n se\u00f1ales",
+        "it": "Marrone segnale",
+        "nl": "Signaalbruin"
+    },
+    "8003": {
+        "RGB": "115-066-034",
+        "HEX": "#734222",
+        "de": "Lehmbraun",
+        "en": "Clay brown",
+        "fr": "Brun argile",
+        "es": "Pardo arcilla",
+        "it": "Marrone fango",
+        "nl": "Leembruin"
+    },
+    "8004": {
+        "RGB": "142-064-042",
+        "HEX": "#8E402A",
+        "de": "Kupferbraun",
+        "en": "Copper brown",
+        "fr": "Brun cuivr\u00e9",
+        "es": "Pardo cobre",
+        "it": "Marrone rame",
+        "nl": "Koperbruin"
+    },
+    "8007": {
+        "RGB": "089-053-031",
+        "HEX": "#59351F",
+        "de": "Rehbraun",
+        "en": "Fawn brown",
+        "fr": "Brun fauve",
+        "es": "Pardo corzo",
+        "it": "Marrone capriolo",
+        "nl": "Reebruin"
+    },
+    "8008": {
+        "RGB": "111-079-040",
+        "HEX": "#6F4F28",
+        "de": "Olivbraun",
+        "en": "Olive brown",
+        "fr": "Brun olive",
+        "es": "Pardo oliva",
+        "it": "Marrone oliva",
+        "nl": "Olijfbruin"
+    },
+    "8011": {
+        "RGB": "091-058-041",
+        "HEX": "#5B3A29",
+        "de": "Nussbraun",
+        "en": "Nut brown",
+        "fr": "Brun noisette",
+        "es": "Pardo nuez",
+        "it": "Marrone noce",
+        "nl": "Notebruin"
+    },
+    "8012": {
+        "RGB": "089-035-033",
+        "HEX": "#592321",
+        "de": "Rotbraun",
+        "en": "Red brown",
+        "fr": "Brun rouge",
+        "es": "Pardo rojo",
+        "it": "Marrone rossiccio",
+        "nl": "Roodbruin"
+    },
+    "8014": {
+        "RGB": "056-044-030",
+        "HEX": "#382C1E",
+        "de": "Sepiabraun",
+        "en": "Sepia brown",
+        "fr": "Brun s\u00e9pia",
+        "es": "Sepia",
+        "it": "Marrone seppia",
+        "nl": "Sepiabruin"
+    },
+    "8015": {
+        "RGB": "099-058-052",
+        "HEX": "#633A34",
+        "de": "Kastanienbraun",
+        "en": "Chestnut brown",
+        "fr": "Marron",
+        "es": "Casta\u00f1o",
+        "it": "Marrone castagna",
+        "nl": "Kastanjebruin"
+    },
+    "8016": {
+        "RGB": "076-047-039",
+        "HEX": "#4C2F27",
+        "de": "Mahagonibraun",
+        "en": "Mahogany brown",
+        "fr": "Brun acajou",
+        "es": "Caoba",
+        "it": "Marrone mogano",
+        "nl": "Mahoniebruin"
+    },
+    "8017": {
+        "RGB": "069-050-046",
+        "HEX": "#45322E",
+        "de": "Schokoladen-braun",
+        "en": "Chocolate brown",
+        "fr": "Brun chocolat",
+        "es": "Chocolate",
+        "it": "Marrone cioccolata",
+        "nl": "Chocoladebruin"
+    },
+    "8019": {
+        "RGB": "064-058-058",
+        "HEX": "#403A3A",
+        "de": "Graubraun",
+        "en": "Grey brown",
+        "fr": "Brun gris",
+        "es": "Pardo gris\u00e1ceo",
+        "it": "Marrone grigiastro",
+        "nl": "Grijsbruin"
+    },
+    "8022": {
+        "RGB": "033-033-033",
+        "HEX": "#212121",
+        "de": "Schwarzbraun",
+        "en": "Black brown",
+        "fr": "Brun noir",
+        "es": "Pardo negruzco",
+        "it": "Marrone nerastro",
+        "nl": "Zwartbruin"
+    },
+    "8023": {
+        "RGB": "166-094-046",
+        "HEX": "#A65E2E",
+        "de": "Orangebraun",
+        "en": "Orange brown",
+        "fr": "Brun orang\u00e9",
+        "es": "Pardo anaranjado",
+        "it": "Marrone arancio",
+        "nl": "Oranjebruin"
+    },
+    "8024": {
+        "RGB": "121-085-061",
+        "HEX": "#79553D",
+        "de": "Beigebraun",
+        "en": "Beige brown",
+        "fr": "Brun beige",
+        "es": "Pardo beige",
+        "it": "Marrone beige",
+        "nl": "Beigebruin"
+    },
+    "8025": {
+        "RGB": "117-092-072",
+        "HEX": "#755C48",
+        "de": "Blassbraun",
+        "en": "Pale brown",
+        "fr": "Brun p\u00e2le",
+        "es": "Pardo p\u00e1lido",
+        "it": "Marrone pallido",
+        "nl": "Bleekbruin"
+    },
+    "8028": {
+        "RGB": "078-059-049",
+        "HEX": "#4E3B31",
+        "de": "Terrabraun",
+        "en": "Terra brown",
+        "fr": "Brun terre",
+        "es": "Marr\u00f3n tierra",
+        "it": "Marrone terra",
+        "nl": "Terrabruin"
+    },
+    "8029": {
+        "RGB": "118-060-040",
+        "HEX": "#763C28",
+        "de": "Perlkupfer",
+        "en": "Pearl copper",
+        "fr": "Cuivre nacr\u00e9",
+        "es": "Cobre perlado",
+        "it": "Rame perlato",
+        "nl": "Parelmoerkoper"
+    },
+    "9001": {
+        "RGB": "250-244-227",
+        "HEX": "#FDF4E3",
+        "de": "Cremewei\u00df",
+        "en": "Cream",
+        "fr": "Blanc cr\u00e8me",
+        "es": "Blanco crema",
+        "it": "Bianco crema",
+        "nl": "Cr\u00e8mewit"
+    },
+    "9002": {
+        "RGB": "231-235-218",
+        "HEX": "#E7EBDA",
+        "de": "Grauwei\u00df",
+        "en": "Grey white",
+        "fr": "Blanc gris",
+        "es": "Blanco gris\u00e1ceo",
+        "it": "Bianco grigiastro",
+        "nl": "Grijswit"
+    },
+    "9003": {
+        "RGB": "244-244-244",
+        "HEX": "#F4F4F4",
+        "de": "Signalwei\u00df",
+        "en": "Signal white",
+        "fr": "Blanc de s\u00e9curit\u00e9",
+        "es": "Blanco se\u00f1ales",
+        "it": "Bianco segnale",
+        "nl": "Signaalwit"
+    },
+    "9004": {
+        "RGB": "040-040-040",
+        "HEX": "#282828",
+        "de": "Signalschwarz",
+        "en": "Signal black",
+        "fr": "Noir de s\u00e9curit\u00e9",
+        "es": "Negro se\u00f1ales",
+        "it": "Nero segnale",
+        "nl": "Signaalzwart"
+    },
+    "9005": {
+        "RGB": "010-010-013",
+        "HEX": "#0A0A0A",
+        "de": "Tiefschwarz",
+        "en": "Jet black",
+        "fr": "Noir fonc\u00e9",
+        "es": "Negro intenso",
+        "it": "Nero intenso",
+        "nl": "Gitzwart"
+    },
+    "9006": {
+        "RGB": "165-165-165",
+        "HEX": "#A5A5A5",
+        "de": "Wei\u00dfaluminium",
+        "en": "White aluminium",
+        "fr": "Aluminium blanc",
+        "es": "Aluminio blanco",
+        "it": "Aluminio brillante",
+        "nl": "Blank aluminiumkleurig"
+    },
+    "9007": {
+        "RGB": "143-143-143",
+        "HEX": "#8F8F8F",
+        "de": "Graualuminium",
+        "en": "Grey aluminium",
+        "fr": "Aluminium gris",
+        "es": "Aluminio gris",
+        "it": "Aluminio grigiastro",
+        "nl": "Grijs aluminiumkleurig"
+    },
+    "9010": {
+        "RGB": "255-255-255",
+        "HEX": "#FFFFFF",
+        "de": "Reinwei\u00df",
+        "en": "Pure white",
+        "fr": "Blanc pur",
+        "es": "Blanco puro",
+        "it": "Bianco puro",
+        "nl": "Zuiverwit"
+    },
+    "9011": {
+        "RGB": "028-028-028",
+        "HEX": "#1C1C1C",
+        "de": "Graphitschwarz",
+        "en": "Graphite black",
+        "fr": "Noir graphite",
+        "es": "Negro grafito",
+        "it": "Nero grafite",
+        "nl": "Grafietzwart"
+    },
+    "9016": {
+        "RGB": "246-246-246",
+        "HEX": "#F6F6F6",
+        "de": "Verkehrswei\u00df",
+        "en": "Traffic white",
+        "fr": "Blanc signalisation",
+        "es": "Blanco tr\u00e1fico",
+        "it": "Bianco traffico",
+        "nl": "Verkeerswit"
+    },
+    "9017": {
+        "RGB": "030-030-030",
+        "HEX": "#1E1E1E",
+        "de": "Verkehrs-schwarz",
+        "en": "Traffic black",
+        "fr": "Noir signalisation",
+        "es": "Negro tr\u00e1fico",
+        "it": "Nero traffico",
+        "nl": "Verkeerszwart"
+    },
+    "9018": {
+        "RGB": "215-215-215",
+        "HEX": "#D7D7D7",
+        "de": "Papyruswei\u00df",
+        "en": "Papyrus white",
+        "fr": "Blanc papyrus",
+        "es": "Blanco papiro",
+        "it": "Bianco papiro",
+        "nl": "Papyruswit"
+    },
+    "9022": {
+        "RGB": "156-156-156",
+        "HEX": "#9C9C9C",
+        "de": "Perlhellgrau",
+        "en": "Pearl light grey",
+        "fr": "Gris clair nacr\u00e9",
+        "es": "Gris claro perlado",
+        "it": "Grigio chiaro perlato",
+        "nl": "Parelmoer-lichtgrijs"
+    },
+    "9023": {
+        "RGB": "130-130-130",
+        "HEX": "#828282",
+        "de": "Perldunkelgrau",
+        "en": "Pearl dark grey",
+        "fr": "Gris fon\u00e7\u00e9 nacr\u00e9",
+        "es": "Gris oscuro perlado",
+        "it": "Grigio scuro perlato",
+        "nl": "Parelmoer-donkergrijs"
+    }
+}

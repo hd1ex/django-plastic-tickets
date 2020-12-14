@@ -33,32 +33,50 @@
             "markdown_description": "**Polylactide** (PLA) is the most widely used plastic in 3D printing. Its advantages are low price, biocompatibility, low moisture absorption, low flammability, high UV resistance, color fastness, and low density (weight). However, PLA has a lower temperature resistance.",
             "markdown_description_en": "**Polylactide** (PLA) is the most widely used plastic in 3D printing. Its advantages are low price, biocompatibility, low moisture absorption, low flammability, high UV resistance, color fastness, and low density (weight). However, PLA has a lower temperature resistance.",
             "markdown_description_de": "**Polylactide** (PLA) ist der meist verbreiteste Kunststoff beim 3D-Drucken. Dessen Vorteile sind ein geringer Preis, seine Biokompatibilität, geringe Feuchtigkeitsaufnahme, geringe Flammbarkeit, hohe UV-Beständigkeit, Farbechtheit, und geringe Dichte (Gewicht). Jedoch hat PLA eine niedrigere Temperaturbeständigkeit.",
-            "production_method": 1
+            "production_method": 1,
+	    "density": 1.24
         }
     },
     {
-        "model": "django_plastic_tickets.materialcolor",
+        "model": "django_plastic_tickets.manufacturer",
         "pk": 1,
         "fields": {
-            "name": "Black",
-            "name_en": "Black",
-            "name_de": "Schwarz",
-            "markdown_description": "Just Black.",
-            "markdown_description_en": "Just Black.",
-            "markdown_description_de": "Einfach Schwarz."
+            "name": "extrudr",
+            "name_en": "extrudr",
+            "name_de": "extrudr",
+            "markdown_description": "Hersteller von Filamentenen aus Österreich.",
+            "markdown_description_en": "Hersteller von Filamentenen aus Österreich.",
+            "markdown_description_de": "Producer of Filaments, located in Austria. ",
+            "url": "https://www.extrudr.com/"
         }
     },
     {
         "model": "django_plastic_tickets.material",
         "pk": 1,
         "fields": {
-            "color": 1,
             "type": 1,
+            "manufacturer": 1,
             "name": "Extrudr PLA NX2 Schwarz",
             "url": "https://www.extrudr.com/en/products/catalogue/pla-nx2-schwarz_1966/",
-            "optimal_temp": 210.0,
-            "min_temp": 200.0,
-            "max_temp": 230.0
+            "ral_color_number": 9017
+        }
+    },
+    {
+        "model": "django_plastic_tickets.filamentmaterial",
+        "pk": 1,
+        "fields": {
+            "nozzle_temp": 210.0,
+            "bed_temp": 60.0
+        }
+    },
+    {
+        "model": "django_plastic_tickets.materialpackage",
+        "pk": 1,
+        "fields": {
+	    "manufacturer": 1,
+            "empty_weight": "100",
+            "usual_capacity": "1000",
+            "appearance": "Filament spool made from transparent, smooth material."
         }
     },
     {
@@ -66,8 +84,13 @@
         "pk": 1,
         "fields": {
             "material": 1,
+            "package": 1,
             "label": 1,
-            "consumed": false
+            "initial_material_weight": 1000,
+            "current_weight": 523,
+            "price": 20,
+            "owner": 1,
+            "usage_comment": "This filament does a lot of stringing - use more retraction than usual!"
         }
     }
 ]
