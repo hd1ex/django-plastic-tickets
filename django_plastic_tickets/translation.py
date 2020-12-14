@@ -9,4 +9,5 @@ class DescriptionOptions(TranslationOptions):
 
 translator.register(models.ProductionMethod, DescriptionOptions)
 translator.register(models.MaterialType, DescriptionOptions)
-translator.register(models.MaterialColor, DescriptionOptions)
+translator.register(models.MaterialProperty, DescriptionOptions)
+translator.register(models.Manufacturer, DescriptionOptions)

@@ -3,7 +3,10 @@
 This ticket can also be viewed at {{ ticket.get_url() }}
 
 {% for config in configs %}
-{{ config.count }}x {{ config.get_file_url() }} using {{ config.color|lower }} {{ config.material_type }}.
+{{ config.count }}x {{ config.get_file_url() }}
+    Color.......................: {{ config.get_color_name() }}
+    Material type...............: {{ config.get_material_type_name() }}
+    Labels of possible materials: {{ config.get_material_stock_list() }}
 {% endfor %}
 {% if message %}
 
@@ -11,3 +14,4 @@ This ticket can also be viewed at {{ ticket.get_url() }}
 
 {{ message }}
 {% endif %}
+

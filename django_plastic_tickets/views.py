@@ -53,9 +53,24 @@ def new_ticket_view(request: HttpRequest, active_file='') -> HttpResponse:
                                      request.POST.get('send_to_user') == 'on')
             return redirect('plastic_tickets_ticket', id=id)
 
+    count = 1
+    selected_pm, selected_mat_type, selected_color = "FFF/FDM", "PLA", ""
+    config = models.PrintConfig.objects.filter(file=active_file,
+                                               user=request.user).first()
+    if config is not None:
+        count = config.count
+        mat = config.get_first_material()
+        selected_pm = mat.type.production_method.name
+        _, selected_mat_type = mat.get_disp_list_name()
+        selected_color = ",".join(
+            str(mat.label) for mat in config.material_stocks.all())
     return render(request, 'plastic_tickets/new_ticket.html',
                   {
                       'files': files, 'active_file': Path(active_file),
+                      'count': count,
+                      'selected_pm': selected_pm,
+                      'selected_mat_type': selected_mat_type,
+                      'selected_color': selected_color,
                       'js_data': js_data,
                       'configured_files': configured_files,
                       'fully_configured': set(configured_files) == set(files),
@@ -73,6 +88,8 @@ def ticket_view(request: HttpRequest, id: int) -> HttpResponse:
     return render(request, 'plastic_tickets/ticket_view.html', context={
         'user': ticket.printconfig_set.first().user,
         'ticket': ticket,
+        'ral_colors': models.ral_colors,
+        'request': request,
     })
 
 

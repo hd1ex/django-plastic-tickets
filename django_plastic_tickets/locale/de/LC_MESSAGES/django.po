@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-15 19:07+0100\n"
+"POT-Creation-Date: 2021-02-09 00:37+0100\n"
 "PO-Revision-Date: 2020-10-11 23:47+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -18,28 +18,105 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.4.1\n"
 
-#: django-plastic-tickets/django_plastic_tickets/forms.py:98
+#: forms.py:91
 msgid "Email sent successfully."
 msgstr "E-Mail erfolgreich versandt."
 
-#: django-plastic-tickets/django_plastic_tickets/forms.py:103
+#: forms.py:96
 #, python-format
 msgid ""
 "Email-transport failed. Please email %(rec)s manually and mention your "
 "ticket id. Sorry for the inconvenience!"
-msgstr "Das Versenden der E-Mail ist fehlgeschlagen. Bitte sende eigenständig "
-"eine E-Mail mit deiner Ticket-Id an %(rec)s. Enschuldigung für die "
+msgstr ""
+"Das Versenden der E-Mail ist fehlgeschlagen. Bitte sende eigenständig eine E-"
+"Mail mit deiner Ticket-Id an %(rec)s. Enschuldigung für die "
 "Unanehmlichkeiten!"
 
-#: django-plastic-tickets/django_plastic_tickets/models.py:20
+#: models.py:21
+msgid "This is not a valid RAL classic color number"
+msgstr "Dies ist keine gültige RAL klassik Farbnummer"
+
+#: models.py:26
+msgid "No Color"
+msgstr "Keine Farbe"
+
+#: models.py:39
 msgid "The markdown-formatted description"
 msgstr "Die mit Markdown formatierte Beschreibung"
 
-#: django-plastic-tickets/django_plastic_tickets/models.py:71
+#: models.py:65
+msgid "Density in g/cm^3"
+msgstr "Dichte in g/cm^3"
+
+#: models.py:89
+msgid "A RAL classic color number, or 0 if a color can not be specified"
+msgstr ""
+"Eine RAL klassik Farbnummer, oder 0 wenn eine Farbe nicht spezifiert werden "
+"kann"
+
+#: models.py:98
+msgid "None"
+msgstr "Keine"
+
+#: models.py:134
+msgid "Optimal nozzle temperature"
+msgstr "Optimale Nozzle temperatur"
+
+#: models.py:136
+msgid "Optimal bed temperature"
+msgstr "Optimale Druckbett temperatur"
+
+#: models.py:138
+msgid "Diameter of the filament"
+msgstr "Durchmesser des Filaments"
+
+#: models.py:146
+msgid "Weight of the empty package in gram"
+msgstr "Gewicht der leeren Verpackung in gram"
+
+#: models.py:149
+msgid "Amount of material in gram, which is usually shipped with this package"
+msgstr ""
+"Menge des Materials in gram, das normalerweise mit dieser Verpackung "
+"versandt wird"
+
+#: models.py:152
+msgid "Model name of the spool, as defined by the manufacturer"
+msgstr "Modell name der Spule, wie vom Hersteller angegeben"
+
+#: models.py:154
+msgid "Short description of the appearance of this package"
+msgstr "Kurze beschreibung des Aussehens der Verpackung"
+
+#: models.py:173
 msgid "The internal label to identify the material"
 msgstr "Die interne Kennzeichnung, um das Material zu indentifizieren"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket.html:40
+#: models.py:176
+msgid ""
+"Initial weight of the material in gram, not including the weight of the "
+"package"
+msgstr ""
+"Anfängliches gewicht des Materials in gram, ohne das gewicht der Verpackung"
+
+#: models.py:179
+msgid ""
+"Current weight of the material in gram, including the weight of the package"
+msgstr "Aktuelles gewicht des Materials in gram, einschließlich der Verpackung"
+
+#: models.py:182
+msgid "Total price, including the package."
+msgstr "Preis einschließlich der Verpackug"
+
+#: models.py:185
+msgid "The owner of the material"
+msgstr "Der Besitzer des Materials"
+
+#: models.py:188
+msgid "Hints about how to use this material"
+msgstr "Hinweise bezüglich der verwendung des Materials"
+
+#: templates/plastic_tickets/new_ticket.html:40
 msgid ""
 "\n"
 "                Configure all files to submit the ticket.\n"
@@ -48,11 +125,11 @@ msgstr ""
 "\n"
 "Konfiguriere alle Dateien, um das Ticket zu erstellen."
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_file_form.html:7
+#: templates/plastic_tickets/new_ticket_file_form.html:7
 msgid "Basic information"
 msgstr "Grundlegende Informationen"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_file_form.html:9
+#: templates/plastic_tickets/new_ticket_file_form.html:9
 msgid ""
 "\n"
 "                The basic information you <b>have to</b> choose yourself.\n"
@@ -61,12 +138,12 @@ msgstr ""
 "\n"
 "Die grundlegenden Informationen <b>musst</b> du selbst wählen."
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_file_form.html:17
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/ticket_view.html:31
+#: templates/plastic_tickets/new_ticket_file_form.html:17
+#: templates/plastic_tickets/ticket_view.html:31
 msgid "Count"
 msgstr "Anzahl"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_file_form.html:24
+#: templates/plastic_tickets/new_ticket_file_form.html:24
 msgid ""
 "\n"
 "                How many times do you want to have this model printed?\n"
@@ -75,11 +152,11 @@ msgstr ""
 "\n"
 "Wie oft möchtest du dieses Modell gedruckt haben?"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_file_form.html:32
+#: templates/plastic_tickets/new_ticket_file_form.html:32
 msgid "Production method"
 msgstr "Produktionsmethode"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_file_form.html:40
+#: templates/plastic_tickets/new_ticket_file_form.html:40
 msgid ""
 "\n"
 "                Which production method should be used?\n"
@@ -88,8 +165,8 @@ msgstr ""
 "\n"
 "Welche Produktionsmethode soll benutzt werden?"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_file_form.html:45
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_file_form.html:71
+#: templates/plastic_tickets/new_ticket_file_form.html:45
+#: templates/plastic_tickets/new_ticket_file_form.html:71
 msgid ""
 "\n"
 "                Here is a quick description of your current selection:\n"
@@ -98,8 +175,8 @@ msgstr ""
 "\n"
 "Hier ist eine schnelle Beschreibung der aktuellen Auswahl:"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_file_form.html:50
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_file_form.html:76
+#: templates/plastic_tickets/new_ticket_file_form.html:50
+#: templates/plastic_tickets/new_ticket_file_form.html:76
 msgid ""
 "\n"
 "                Placeholder: Please enable JavaScript!\n"
@@ -108,11 +185,11 @@ msgstr ""
 "\n"
 "Platzhalter: Bitte JavaScript aktivieren!"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_file_form.html:58
+#: templates/plastic_tickets/new_ticket_file_form.html:58
 msgid "Material type"
 msgstr "Materialart"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_file_form.html:66
+#: templates/plastic_tickets/new_ticket_file_form.html:66
 msgid ""
 "\n"
 "                Which material should be used?\n"
@@ -121,11 +198,11 @@ msgstr ""
 "\n"
 "Welche Materialart soll benutzt werden?"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_file_form.html:84
+#: templates/plastic_tickets/new_ticket_file_form.html:84
 msgid "Material color"
 msgstr "Materialfarbe"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_file_form.html:92
+#: templates/plastic_tickets/new_ticket_file_form.html:92
 msgid ""
 "\n"
 "                Which color should the material have?\n"
@@ -134,27 +211,27 @@ msgstr ""
 "\n"
 "Welche Farbe soll das Material haben?"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_file_form.html:114
+#: templates/plastic_tickets/new_ticket_file_form.html:114
 msgid "Save"
 msgstr "Speichern"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_file_form.html:115
+#: templates/plastic_tickets/new_ticket_file_form.html:115
 msgid "Reset"
 msgstr "Zurücksetzen"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_file_upload.html:7
+#: templates/plastic_tickets/new_ticket_file_upload.html:7
 msgid "Upload files"
 msgstr "Dateien Hochladen"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_file_upload.html:13
+#: templates/plastic_tickets/new_ticket_file_upload.html:13
 msgid "Upload"
 msgstr "Hochladen"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_file_upload.html:16
+#: templates/plastic_tickets/new_ticket_file_upload.html:16
 msgid "Delete all cached files"
 msgstr "Lösche alle zwischengespeicherten Dateien"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_start.html:4
+#: templates/plastic_tickets/new_ticket_start.html:4
 msgid ""
 "\n"
 "        Ticket creation\n"
@@ -163,7 +240,7 @@ msgstr ""
 "\n"
 "Ticketerstellung"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_start.html:10
+#: templates/plastic_tickets/new_ticket_start.html:10
 msgid ""
 "\n"
 "        Here you can create a new Ticket for 3D models to be 3D printed by "
@@ -174,7 +251,7 @@ msgstr ""
 "Hier kannst du ein neues Ticket für 3D-Modelle erstellen, die von uns "
 "gedruckt werden sollen."
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_start.html:16
+#: templates/plastic_tickets/new_ticket_start.html:16
 msgid ""
 "\n"
 "        You will start by adding one or more stl files\n"
@@ -185,7 +262,7 @@ msgstr ""
 "Zuerst wirst du eine oder mehrere STL-Dateien hinzufügen,\n"
 "welche einmal oder mehrmals gedruckt werden sollen."
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_start.html:23
+#: templates/plastic_tickets/new_ticket_start.html:23
 msgid ""
 "\n"
 "        Make sure that you use <b>sane file names</b> as we will reference\n"
@@ -196,7 +273,7 @@ msgstr ""
 "Bitte verwende <b>sinnvolle Dateinamen</b>, da diese später referenziert "
 "werden."
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_start.html:30
+#: templates/plastic_tickets/new_ticket_start.html:30
 msgid ""
 "\n"
 "        After this you will specify the details about the prints\n"
@@ -207,23 +284,23 @@ msgstr ""
 "Danach wirst du die Einzelheiten über die Drucke spezifizieren\n"
 "und kannst eine eigene Nachricht anhängen."
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_submit.html:7
+#: templates/plastic_tickets/new_ticket_submit.html:7
 msgid "Custom message"
 msgstr "Eigene Nachricht"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_submit.html:16
+#: templates/plastic_tickets/new_ticket_submit.html:16
 msgid "Optional custom message for more details."
 msgstr "Optionale eigene Nachricht für mehr Details."
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_submit.html:22
+#: templates/plastic_tickets/new_ticket_submit.html:22
 msgid "Also send the ticket email to me"
 msgstr "Sende die Ticket E-Mail auch an mich"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/new_ticket_submit.html:27
+#: templates/plastic_tickets/new_ticket_submit.html:27
 msgid "Submit ticket"
 msgstr "Ticket erstellen"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/overview.html:13
+#: templates/plastic_tickets/overview.html:13
 msgid ""
 "\n"
 "        Welcome to Plastic Tickets!\n"
@@ -232,7 +309,7 @@ msgstr ""
 "\n"
 "Willkommen zu Plastik-Tickets!"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/overview.html:21
+#: templates/plastic_tickets/overview.html:21
 msgid ""
 "\n"
 "              Click here to create a ticket\n"
@@ -241,7 +318,7 @@ msgstr ""
 "\n"
 "Drücke hier, um ein Ticket zu erstellen"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/ticket_view.html:21
+#: templates/plastic_tickets/ticket_view.html:21
 #, python-format
 msgid ""
 "\n"
@@ -252,21 +329,24 @@ msgstr ""
 "Dieses Ticket ist von %(name)s (%(email)s).\n"
 "    "
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/ticket_view.html:30
+#: templates/plastic_tickets/ticket_view.html:30
 msgid "File"
 msgstr "Datei"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/ticket_view.html:32
+#: templates/plastic_tickets/ticket_view.html:32
 #, fuzzy
 #| msgid "Material type"
 msgid "Material"
 msgstr "Materialart"
 
-#: django-plastic-tickets/django_plastic_tickets/templates/plastic_tickets/ticket_view.html:33
+#: templates/plastic_tickets/ticket_view.html:33
 msgid "Color"
 msgstr "Farbe"
 
-#: django-plastic-tickets/django_plastic_tickets/views.py:71
-#: django-plastic-tickets/django_plastic_tickets/views.py:85
+#: templates/plastic_tickets/ticket_view.html:35
+msgid "Labels of possible<br>materials"
+msgstr "Nummern möglicher<br>Materialien"
+
+#: views.py:86 views.py:102
 msgid "Access denied"
 msgstr "Zugang verweigert"
