@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% load django_bootstrap_breadcrumbs %}
+{% load plastic_extras %}
+
+{% block breadcrumbs %}
+    {{ block.super }}
+    {% breadcrumb 'Plastic tickets' 'plastic_tickets_index' %}
+    {% breadcrumb 'Manage tickets' 'plastic_tickets_list' %}
+{% endblock %}
+
+{% block content %}
+<h3>{% trans 'Ticket Overview' %}</h3>
+
+<div style="margin-bottom: 0.3em">
+    <span>
+        <select class="select2-dropdown" id="select_assignee" name="assignee">
+            <option value="__all__"> {% trans 'All assignees' %} </option>
+        </select>
+    </span>
+    {% for state in ticket_states %}
+        <span style="background: var(--secondary); border-radius: 0.2em;
+padding: 0 1ex 0 1ex; display: flex; align-items: center; float: right;
+margin: 0.4em 0 0.4em 0.8em">
+            {{ state | ticketbadge }}
+&nbsp;
+            <input class="form-check-input" type="checkbox" value=""
+checked="" style="margin: 0 0 0 5px; position: relative;", id="checkbox_{{state}}"> </input>
+        </span>
+    {% endfor %}
+</div>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col"><button type="button" class="btn btn-table-sort" id="id_sort"></button> Ticket</th>
+        <th scope="col"><button type="button" class="btn btn-table-sort" id="state_sort"/></button> {% trans 'State' %}</th>
+        <th scope="col"><button type="button" class="btn btn-table-sort" id="assignee_sort"/></button> {% trans 'Assignee' %}</th>
+    </tr>
+    </thead>
+    <tbody id="tbody">
+    </tbody>
+</table>
+
+<script src="/static/javascript/plastic_table.js"></script>
+
+<script type="text/javascript">
+    const tickets = {{js_data|safe}};
+
+    function row_builder (row_data, row_ele) {
+        var cell = row_ele.insertCell();
+        cell.innerHTML = '<a href="/tickets/' + row_data.id + '"># Ticket ' + row_data.id + '</a> '
+
+        cell = row_ele.insertCell();
+        if (row_data.state == 'OP') {
+            if (row_data.assignee === null) {
+                cell.innerHTML = '{{ "UN" | ticketbadge}}';
+            } else {
+                cell.innerHTML = '{{ "PR" | ticketbadge}}';
+            }
+        } else if (row_data.state == 'RE') {
+            cell.innerHTML = '{{ "RE" | ticketbadge}}';
+        } else if (row_data.state == 'DO') {
+            cell.innerHTML = '{{ "DO" | ticketbadge}}';
+        }
+
+        cell = row_ele.insertCell();
+        if (row_data.assignee === null){
+            cell.innerHTML = '<em>{% trans "Unassigned" %}</em>'
+        } else {
+            cell.innerHTML = row_data.assignee;
+        }
+    }
+
+    let select = document.getElementById('select_assignee');
+    select.onchange = () => table.rebuild();
+
+    let table = new PlasticTickets.PlasticTable(tickets, "tbody", row_builder);
+    let assignee_list = new Set(tickets.map(row => row.assignee));
+    assignee_list.delete(null);
+    PlasticTickets.populate_with_options(select, assignee_list);
+
+    ["id", "assignee"].forEach(col => {
+        let btn = document.getElementById(col + "_sort");
+        let func = (a, b, dir) => PlasticTickets.simple_sort_func(a[col], b[col], dir)
+        table.register_sort_button(btn, func);
+    });
+    const ticket_states = {{ ticket_states|safe }};
+    let btn = document.getElementById("state_sort");
+    let trans_state = function (row) {
+        if(row.state == "OP") {
+            if (row.assignee === null) {
+                return ticket_states.indexOf("UN");
+            } else {
+                return ticket_states.indexOf("PR");
+            }
+        } else {
+            return ticket_states.indexOf(row.state);
+        }
+    }
+    let func = (a, b, dir) => PlasticTickets.simple_sort_func(trans_state(a), trans_state(b), dir)
+    table.register_sort_button(btn, func);
+
+    {% for state in ticket_states %}
+        let checkbox_{{state}} = document.getElementById("checkbox_{{state}}");
+        checkbox_{{state}}.onclick = () => table.rebuild();
+    {% endfor %}
+
+    table.filter_func = function (row) {
+        if (select.value != "__all__" && select.value != row.assignee) {
+            return false;
+        }
+        if (row.state == "DO") {
+            return checkbox_DO.checked;
+        } else if(row.state == "RE") {
+            return checkbox_RE.checked;
+        } else if(row.state == "OP") {
+            if (row.assignee === null) {
+                return checkbox_UN.checked;
+            } else {
+                return checkbox_PR.checked;
+            }
+        } else {
+            return false;
+        }
+    }
+
+    table.rebuild();
+
+    window.addEventListener("pageshow", function(event){
+        var historyTraversal = event.persisted ||
+            (typeof window.performance != "undefined" &&
+             window.performance.navigation.type === 2);
+        if(historyTraversal){
+            window.location.reload();
+        }
+    });
+</script>
+
+{% endblock %}

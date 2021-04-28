@@ -1,6 +1,7 @@
 {{ user.get_full_name() }} ({{ user.email }}) wants to have some stuff printed.
 
 This ticket can also be viewed at {{ ticket.get_url() }}
+You can assign this ticket to someone using the same link.
 
 {% for config in configs %}
 {{ config.count }}x {{ config.get_file_url() }}

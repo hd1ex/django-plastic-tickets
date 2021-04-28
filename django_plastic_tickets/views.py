@@ -7,6 +7,8 @@ from django.contrib.auth.views import login_required
 from django.http import HttpRequest, HttpResponse, HttpResponseForbidden
 from django.shortcuts import render, redirect, get_object_or_404
 from django.utils.translation import gettext
+from django.contrib.auth import get_user_model
+from django.db.models.functions import Lower
 
 from . import models, forms, util
 
@@ -85,12 +87,85 @@ def ticket_view(request: HttpRequest, id: int) -> HttpResponse:
     if config.user != request.user and not request.user.is_staff:
         return HttpResponseForbidden(gettext('Access denied'))
 
+    if request.method == 'POST':
+        if not request.user.is_staff:
+            return HttpResponseForbidden(gettext('Access denied'))
+        if "close" in request.POST and \
+           ticket.state == models.Ticket.TicketState.OPEN:
+            ticket.state = models.Ticket.TicketState.DONE
+            ticket.save()
+        elif ("reject" in request.POST and
+              ticket.state == models.Ticket.TicketState.OPEN):
+            ticket.state = models.Ticket.TicketState.REJECTED
+            ticket.save()
+        elif ("reopen" in request.POST and
+              (ticket.state == models.Ticket.TicketState.DONE or
+               ticket.state == models.Ticket.TicketState.REJECTED)):
+            ticket.state = models.Ticket.TicketState.OPEN
+            ticket.save()
+        elif "apply" in request.POST:
+            new_assignee = request.POST.get("assignee")
+            if new_assignee == "unassigned":
+                ticket.assignee = None
+                ticket.save()
+            else:
+                new_user = get_user_model().objects \
+                                           .filter(id=new_assignee) \
+                                           .first()
+                if new_user is not None:
+                    ticket.assignee = new_user
+                    ticket.save()
+
+    possible_assignees = None
+    if request.user.is_staff:
+        possible_assignees = get_user_model().objects \
+                                             .filter(is_staff=True) \
+                                             .order_by(Lower("username"))
+
     return render(request, 'plastic_tickets/ticket_view.html', context={
         'user': ticket.printconfig_set.first().user,
         'ticket': ticket,
         'ral_colors': models.ral_colors,
         'request': request,
+        'possible_assignees': possible_assignees
     })
+
+
+@login_required
+def ticket_list_view(request: HttpRequest) -> HttpResponse:
+    tickets = models.Ticket.objects.all()
+    js_data = []
+    for ticket in tickets:
+        config = ticket.printconfig_set.first()
+        if config.user == request.user or request.user.is_staff:
+            assignee = ticket.assignee
+            if assignee is not None:
+                assignee = ticket.assignee.get_username()
+            js_data.append({'id': ticket.id,
+                            'state': ticket.state,
+                            'assignee': assignee})
+    return render(request, 'plastic_tickets/ticket_list_view.html', context={
+        'request': request,
+        'js_data': json.dumps(js_data),
+        'ticket_states': ["UN", "PR", "DO", "RE"]
+    })
+
+
+@login_required
+def materials_list_view(request: HttpRequest) -> HttpResponse:
+    js_data = json.dumps([{
+        "label": stock.label,
+        "props": [str(prop) for prop in stock.material.properties.all()],
+        "type": stock.material.type.name,
+        "color": stock.material.get_color_name(),
+        "ral": stock.material.ral_color_number,
+        "amount": stock.current_weight,
+        "price": 5
+        } for stock in models.MaterialStock.objects.all()])
+    return render(request, 'plastic_tickets/materials_list_view.html',
+                  {
+                      'js_data': js_data
+                  })
 
 
 @login_required
