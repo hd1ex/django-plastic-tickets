@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% load django_bootstrap_breadcrumbs %}
+{% load plastic_extras %}
+
+{% block breadcrumbs %}
+    {{ block.super }}
+    {% breadcrumb 'Plastic tickets' 'plastic_tickets_index' %}
+{% endblock %}
+
+{% block content %}
+    <h3> Ticket Overview </h3>
+
+    {{ unassigned_tickets }} &times; {{ "UN" | ticketbadge }} &nbsp;
+    {{ open_tickets }} &times; {{ "PR" | ticketbadge }}
+ 
+    <br>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">Ticket</th>
+            <th scope="col">{% trans 'State' %}</th>
+            <th scope="col">{% trans 'Assignee' %}</th>
+        </tr>
+        </thead>  
+        <tbody>
+        {% for ticket in tickets %}
+            <tr>
+                <td> <a href="/tickets/{{ ticket.id }}"># Ticket {{ ticket.id }}</a> </td>
+		<td>{{ ticket.badge | ticketbadge }}</td>
+		{% trans "Unassigned" as unassigned %}
+                <td>{{ ticket.assignee | default_if_none:unassigned }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <script type="text/javascript">
+        window.addEventListener("pageshow", function(event){
+            var historyTraversal = event.persisted ||
+                (typeof window.performance != "undefined" &&
+                 window.performance.navigation.type === 2);
+            if(historyTraversal){
+                window.location.reload();
+            }
+        });
+    </script>
+{% endblock %}

@@ -7,6 +7,8 @@ from django.contrib.auth.views import login_required
 from django.http import HttpRequest, HttpResponse, HttpResponseForbidden
 from django.shortcuts import render, redirect, get_object_or_404
 from django.utils.translation import gettext
+from django.contrib.auth import get_user_model
+from django.db.models.functions import Lower
 
 from . import models, forms, util
 
@@ -85,11 +87,67 @@ def ticket_view(request: HttpRequest, id: int) -> HttpResponse:
     if config.user != request.user and not request.user.is_staff:
         return HttpResponseForbidden(gettext('Access denied'))
 
+    if request.method == 'POST':
+        if not request.user.is_staff:
+            return HttpResponseForbidden(gettext('Access denied'))
+        if "close" in request.POST and \
+           ticket.state == models.Ticket.TicketState.OPEN:
+            ticket.state = models.Ticket.TicketState.DONE
+            ticket.save()
+        elif ("reject" in request.POST and
+              ticket.state == models.Ticket.TicketState.OPEN):
+            ticket.state = models.Ticket.TicketState.REJECTED
+            ticket.save()
+        elif ("reopen" in request.POST and
+              (ticket.state == models.Ticket.TicketState.DONE or
+               ticket.state == models.Ticket.TicketState.REJECTED)):
+            ticket.state = models.Ticket.TicketState.OPEN
+            ticket.save()
+        elif "apply" in request.POST:
+            new_assignee = request.POST.get("assignee")
+            if new_assignee == "unassigned":
+                ticket.assignee = None
+                ticket.save()
+            else:
+                new_user = get_user_model().objects \
+                                           .filter(id=new_assignee) \
+                                           .first()
+                if new_user is not None:
+                    ticket.assignee = new_user
+                    ticket.save()
+
+    possible_assignees = None
+    if request.user.is_staff:
+        possible_assignees = get_user_model().objects \
+                                             .filter(is_staff=True) \
+                                             .order_by(Lower("username"))
+
     return render(request, 'plastic_tickets/ticket_view.html', context={
         'user': ticket.printconfig_set.first().user,
         'ticket': ticket,
         'ral_colors': models.ral_colors,
         'request': request,
+        'possible_assignees': possible_assignees
+    })
+
+
+@login_required
+def ticket_list_view(request: HttpRequest) -> HttpResponse:
+    if not request.user.is_staff:
+        return HttpResponseForbidden(gettext('Access denied'))
+    tickets = models.Ticket.objects.all()
+    open_tickets, unassigned_tickets = 0, 0
+    for ticket in tickets:
+        if ticket.state == models.Ticket.TicketState.OPEN:
+            if ticket.assignee:
+                open_tickets += 1
+            else:
+                unassigned_tickets += 1
+    return render(request, 'plastic_tickets/ticket_list_view.html', context={
+        'open_tickets': open_tickets,
+        'unassigned_tickets': unassigned_tickets,
+        'request': request,
+        'tickets': tickets
     })
 
 
