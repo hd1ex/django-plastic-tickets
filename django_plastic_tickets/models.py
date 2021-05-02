@@ -203,7 +203,21 @@ class MaterialStock(models.Model):
 
 
 class Ticket(models.Model):
-    message = models.TextField()
+
+    class TicketState(models.TextChoices):
+        OPEN = 'OP', gettext('Open')
+        REJECTED = 'RE', gettext('Rejected')
+        DONE = 'DO', gettext('Done')
+
+    message = models.TextField(blank=True)
+    state = models.CharField(
+        max_length=2,
+        choices=TicketState.choices,
+        default=TicketState.OPEN)
+    assignee = models.ForeignKey(
+        User, blank=True, null=True,
+        on_delete=models.CASCADE, help_text=gettext(
+            'The staff member who works on the ticket'))
 
     def get_url(self):
         return build_url(django.urls.reverse(
@@ -215,6 +229,18 @@ class Ticket(models.Model):
         for line in self.message.splitlines():
             sum += max(1, len(textwrap.wrap(line, cols)))
         return sum + 0
+
+    def badge(self) -> str:
+        if self.state == "OP":
+            if self.assignee is None:
+                return "UN"
+            else:
+                return "PR"
+        else:
+            return self.state
+
+    def __str__(self) -> str:
+        return f"#{self.id}: {self.state}"
 
 
 class PrintConfig(models.Model):
