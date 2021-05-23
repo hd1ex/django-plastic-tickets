@@ -2,10 +2,12 @@
 {% load i18n %}
 
 {% load django_bootstrap_breadcrumbs %}
+{% load plastic_extras %}
 
 {% block breadcrumbs %}
     {{ block.super }}
     {% breadcrumb 'Plastic tickets' 'plastic_tickets_index' %}
+    {% breadcrumb 'Manage tickets' 'plastic_tickets_list' %}
     {% breadcrumb ticket.id 'plastic_tickets_ticket' %}
 {% endblock %}
 
@@ -17,24 +19,27 @@
         {% endfor %}
     {% endif %}
 
-    <h3> # Ticket {{ ticket.id }}</h3>
-    {% blocktrans with name=user.get_full_name email=user.email %}
-        This ticket is from {{ name }} ({{ email }}).
-    {% endblocktrans %}
+    <h3> # Ticket {{ ticket.id }} </h3>
+
+    {{ ticket.badge | ticketbadge }} 
+    {% blocktrans with name=user.username email=user.email %}This ticket is from {{ name }} ({{ email }}){% endblocktrans %}
+    {% if ticket.assignee %}
+        {% blocktrans with name=ticket.assignee.username email=ticket.assignee.email %}and assigned to {{ name }} ({{ email }}){% endblocktrans %}
+    {% endif %}
 
     <br>
 
     <table class="table table-striped">
         <thead>
-        <tr>
-            <th scope="col">{% trans 'File' %}</th>
-            <th scope="col">{% trans 'Count' %}</th>
-            <th scope="col">{% trans 'Material' %}</th>
-            <th scope="col">{% trans 'Color' %}</th>
-	    {% if request.user.is_staff %}
-	    <th scope="col">{% trans 'Labels of possible<br>materials' %}</th>
-	    {% endif %}
-        </tr>
+            <tr>
+                <th scope="col">{% trans 'File' %}</th>
+                <th scope="col">{% trans 'Count' %}</th>
+                <th scope="col">{% trans 'Material' %}</th>
+                <th scope="col">{% trans 'Color' %}</th>
+                {% if request.user.is_staff %}
+                    <th scope="col">{% trans 'Labels of possible<br>materials' %}</th>
+                {% endif %}
+            </tr>
         </thead>
         <tbody>
         {% for config in ticket.printconfig_set.all %}
@@ -47,9 +52,9 @@
                 <td>{{ config.count }}</td>
                 <td>{{ config.get_material_type_name }}</td>
                 <td>{{ config.get_color_name }}</td>
-	        {% if request.user.is_staff %}
-                <td>{{ config.get_material_stock_list }}</td>
-	        {% endif %}
+                {% if request.user.is_staff %}
+                    <td>{{ config.get_material_stock_list }}</td>
+                {% endif %}
             </tr>
         {% endfor %}
         </tbody>
@@ -66,5 +71,59 @@
                       cols="76"
                       wrap="soft">{{ ticket.message }}</textarea>
         </div>
+    {% endif %}
+    <hr>
+    {% if request.user.is_staff %}
+        <fieldset>
+            <legend>{% trans 'Edit Ticket' %}</legend>
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="assignee">
+                        {% trans 'Assignee' %}
+                    </label>
+                    <label>
+                        <select class="select2-dropdown" id="assignee" name="assignee">
+                            <option value="unassigned"> {% trans 'Unassigned' %} </option>
+                            {% for user in possible_assignees %}
+                                <option value="{{ user.id }}"> {{ user.username }} </option>
+                            {% endfor %}
+                        </select>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit" name="apply">{% trans "Apply Changes" %}</button>
+                {% if ticket.state == "OP" %}
+                    <button type="submit" class="btn btn-success" name="close">{% trans "Close Ticket" %}</button>
+                    <button type="submit" class="btn btn-danger" name="reject">{% trans "Reject Ticket" %}</button>
+                {% elif ticket.state == "RE" or ticket.state == "DO" %}
+                    <button type="submit" class="btn btn-secondary" name="reopen">{% trans "Reopen Ticket" %}</button>
+                {% endif %}
+            </form>
+        </fieldset>
+        <script type="text/javascript">
+            window.addEventListener("pageshow", function(event){
+                var historyTraversal = event.persisted ||
+                    (typeof window.performance != "undefined" &&
+                     window.performance.navigation.type === 2);
+                if(historyTraversal){
+                    window.location.reload();
+                }
+            });
+            let assignee = document.getElementById('assignee');
+            {% if ticket.assignee %}
+                assignee.value = {{ ticket.assignee.id }};
+            {% else %}
+                assignee.value = "unassigned";
+            {% endif %}
+            let submit = document.getElementById('submit');
+            assignee.onchange = function () {
+            {% if ticket.assignee %}
+                    submit.disabled = assignee.value == {{ ticket.assignee.id }};
+                {% else %}
+                    submit.disabled = assignee.value == "unassigned";
+                {% endif %}
+            };
+            assignee.onchange();
+        </script>
     {% endif %}
 {% endblock %}

@@ -11,16 +11,24 @@
 {% block content %}
     {{ block.super }}
     {% blocktrans %}
-        Welcome to Plastic Tickets!
+        <h3>Welcome to Plastic Tickets!</h3>
     {% endblocktrans %}
 
     <br>
 
     <a href="{% url 'plastic_tickets_new' %}">
-      <button class="btn btn-info mb-4">
-          {% blocktrans %}
-              Click here to create a ticket
-          {% endblocktrans %}
-      </button>
+        <button class="btn btn-info mb-4" style="min-width: 28ex;">
+            {% blocktrans %}
+                Click here to create a ticket
+            {% endblocktrans %}
+        </button>
+    </a>
+    <br>
+    <a href="{% url 'plastic_tickets_list' %}">
+        <button class="btn btn-info mb-4" style="min-width: 28ex;">
+            {% blocktrans %}
+                Manage tickets
+            {% endblocktrans %}
+        </button>
     </a>
 {% endblock %}
